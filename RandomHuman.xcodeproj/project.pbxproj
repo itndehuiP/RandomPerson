@@ -15,6 +15,14 @@
 		A00DC3112612E78100CA804F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00DC30F2612E78100CA804F /* LaunchScreen.storyboard */; };
 		A00DC31C2612E78200CA804F /* RandomHumanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC31B2612E78200CA804F /* RandomHumanTests.swift */; };
 		A00DC3272612E78200CA804F /* RandomHumanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3262612E78200CA804F /* RandomHumanUITests.swift */; };
+		A00DC339261301FC00CA804F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC338261301FC00CA804F /* Person.swift */; };
+		A00DC33F261302DB00CA804F /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC33E261302DB00CA804F /* Name.swift */; };
+		A00DC3452613036900CA804F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3442613036900CA804F /* Location.swift */; };
+		A00DC34D2613056900CA804F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC34C2613056900CA804F /* Coordinate.swift */; };
+		A00DC3522613093700CA804F /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3512613093700CA804F /* TimeZone.swift */; };
+		A00DC35A2613149600CA804F /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3592613149600CA804F /* Street.swift */; };
+		A00DC35F261317C500CA804F /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC35E261317C500CA804F /* Gender.swift */; };
+		A00DC36426131B2000CA804F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC36326131B2000CA804F /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		A00DC3222612E78200CA804F /* RandomHumanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomHumanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00DC3262612E78200CA804F /* RandomHumanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHumanUITests.swift; sourceTree = "<group>"; };
 		A00DC3282612E78200CA804F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00DC338261301FC00CA804F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A00DC33E261302DB00CA804F /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		A00DC3442613036900CA804F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A00DC34C2613056900CA804F /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		A00DC3512613093700CA804F /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
+		A00DC3592613149600CA804F /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		A00DC35E261317C500CA804F /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		A00DC36326131B2000CA804F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,9 @@
 		A00DC3032612E78100CA804F /* RandomHuman */ = {
 			isa = PBXGroup;
 			children = (
+				A00DC36826131BF100CA804F /* View */,
+				A00DC36926131BF600CA804F /* ViewModels */,
+				A00DC337261301ED00CA804F /* Models */,
 				A00DC3042612E78100CA804F /* AppDelegate.swift */,
 				A00DC3062612E78100CA804F /* SceneDelegate.swift */,
 				A00DC3082612E78100CA804F /* ViewController.swift */,
@@ -126,6 +145,51 @@
 				A00DC3282612E78200CA804F /* Info.plist */,
 			);
 			path = RandomHumanUITests;
+			sourceTree = "<group>";
+		};
+		A00DC337261301ED00CA804F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC3432613036000CA804F /* Location */,
+				A00DC33D261302CB00CA804F /* Person */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00DC33D261302CB00CA804F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC338261301FC00CA804F /* Person.swift */,
+				A00DC33E261302DB00CA804F /* Name.swift */,
+				A00DC35E261317C500CA804F /* Gender.swift */,
+				A00DC36326131B2000CA804F /* Login.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		A00DC3432613036000CA804F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC34C2613056900CA804F /* Coordinate.swift */,
+				A00DC3442613036900CA804F /* Location.swift */,
+				A00DC3592613149600CA804F /* Street.swift */,
+				A00DC3512613093700CA804F /* TimeZone.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		A00DC36826131BF100CA804F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A00DC36926131BF600CA804F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00DC35A2613149600CA804F /* Street.swift in Sources */,
+				A00DC34D2613056900CA804F /* Coordinate.swift in Sources */,
 				A00DC3092612E78100CA804F /* ViewController.swift in Sources */,
 				A00DC3052612E78100CA804F /* AppDelegate.swift in Sources */,
+				A00DC339261301FC00CA804F /* Person.swift in Sources */,
+				A00DC3522613093700CA804F /* TimeZone.swift in Sources */,
+				A00DC35F261317C500CA804F /* Gender.swift in Sources */,
 				A00DC3072612E78100CA804F /* SceneDelegate.swift in Sources */,
+				A00DC3452613036900CA804F /* Location.swift in Sources */,
+				A00DC36426131B2000CA804F /* Login.swift in Sources */,
+				A00DC33F261302DB00CA804F /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
