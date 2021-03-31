@@ -1,5 +1,5 @@
 //
-//  HighlightedButton.swift
+//  CircleButton.swift
 //  RandomHuman
 //
 //  Created by Guerson Perez on 31/03/21.
@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class HighlightedButton: UIButton {
+class CircleButton: UIButton {
 
     /// Init for integration by code
     override init(frame: CGRect) {
@@ -21,14 +21,18 @@ class HighlightedButton: UIButton {
         specifiInit()
     }
 
+//    override func layoutSubviews() {
+//
+//    }
+    
     private func specifiInit(){
-        self.backgroundColor = UIColor.alert?.withAlphaComponent(0.90)
-        self.titleLabel?.font = .preferredFont(forTextStyle: .headline)
+        self.backgroundColor = UIColor.randomHappyColor
+        self.titleLabel?.font = .preferredFont(forTextStyle: .title1)
         self.titleLabel?.textColor = UIColor.constrast
         self.tintColor = UIColor.constrast
-        self.layer.cornerRadius = 20
-        self.layer.borderWidth = 3
-        self.layer.borderColor = UIColor.alert?.cgColor
+        self.layer.cornerRadius = self.frame.size.width/2
+        self.clipsToBounds = true
     }
 
 }
+

@@ -14,4 +14,14 @@ extension UIColor {
     static let highlight = UIColor(named: "Highlight")
     static let secondHighlight = UIColor(named: "SecondHighlight")
     static let theme = UIColor(named: "Theme")
+    
+    static var randomHappyColor: UIColor? {
+        let random = Int.random(in: 0...2)
+        switch random {
+        case 0:
+            return UIColor.alert
+        default:
+            return UIColor.highlight
+        }
+    }
 }

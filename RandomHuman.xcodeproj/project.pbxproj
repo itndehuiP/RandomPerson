@@ -44,6 +44,9 @@
 		A00DC436261478BC00CA804F /* Extension+Array+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC435261478BC00CA804F /* Extension+Array+String.swift */; };
 		A00DC43E26147B9300CA804F /* DescriptiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC43D26147B9300CA804F /* DescriptiveLabel.swift */; };
 		A00DC44A26147CF000CA804F /* DiversityQuoteGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC44926147CF000CA804F /* DiversityQuoteGenerator.swift */; };
+		A00DC45B261483A800CA804F /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC45A261483A800CA804F /* CircleButton.swift */; };
+		A00DC4632614861000CA804F /* RandomRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00DC4622614861000CA804F /* RandomRowCell.xib */; };
+		A00DC4682614868200CA804F /* RandomRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC4672614868200CA804F /* RandomRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,9 @@
 		A00DC435261478BC00CA804F /* Extension+Array+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Array+String.swift"; sourceTree = "<group>"; };
 		A00DC43D26147B9300CA804F /* DescriptiveLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptiveLabel.swift; sourceTree = "<group>"; };
 		A00DC44926147CF000CA804F /* DiversityQuoteGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiversityQuoteGenerator.swift; sourceTree = "<group>"; };
+		A00DC45A261483A800CA804F /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		A00DC4622614861000CA804F /* RandomRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomRowCell.xib; sourceTree = "<group>"; };
+		A00DC4672614868200CA804F /* RandomRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,10 +298,11 @@
 		A00DC401261460B200CA804F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A00DC44E26147FBE00CA804F /* TopCard */,
 				A00DC3082612E78100CA804F /* ViewController.swift */,
 				A00DC30A2612E78100CA804F /* Main.storyboard */,
-				A00DC402261462EB00CA804F /* HomeMainCard.xib */,
-				A00DC410261466EA00CA804F /* HomeMainCard.swift */,
+				A00DC4622614861000CA804F /* RandomRowCell.xib */,
+				A00DC4672614868200CA804F /* RandomRowCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -321,6 +328,7 @@
 		A00DC4282614701C00CA804F /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				A00DC45A261483A800CA804F /* CircleButton.swift */,
 				A00DC4232614700D00CA804F /* HighlightedButton.swift */,
 			);
 			path = Button;
@@ -348,6 +356,15 @@
 				A00DC44926147CF000CA804F /* DiversityQuoteGenerator.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A00DC44E26147FBE00CA804F /* TopCard */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC410261466EA00CA804F /* HomeMainCard.swift */,
+				A00DC402261462EB00CA804F /* HomeMainCard.xib */,
+			);
+			path = TopCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +481,7 @@
 				A00DC42E2614772700CA804F /* DiversityQuotes.plist in Resources */,
 				A00DC30E2612E78100CA804F /* Assets.xcassets in Resources */,
 				A00DC30C2612E78100CA804F /* Main.storyboard in Resources */,
+				A00DC4632614861000CA804F /* RandomRowCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +521,7 @@
 				A00DC38926132E7B00CA804F /* APITools.swift in Sources */,
 				A00DC3092612E78100CA804F /* ViewController.swift in Sources */,
 				A00DC44A26147CF000CA804F /* DiversityQuoteGenerator.swift in Sources */,
+				A00DC45B261483A800CA804F /* CircleButton.swift in Sources */,
 				A00DC3B22613EC1D00CA804F /* PersonResponse.swift in Sources */,
 				A00DC3052612E78100CA804F /* AppDelegate.swift in Sources */,
 				A00DC339261301FC00CA804F /* Person.swift in Sources */,
@@ -516,6 +535,7 @@
 				A00DC3D12614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift in Sources */,
 				A00DC3452613036900CA804F /* Location.swift in Sources */,
 				A00DC36426131B2000CA804F /* Login.swift in Sources */,
+				A00DC4682614868200CA804F /* RandomRowCell.swift in Sources */,
 				A00DC33F261302DB00CA804F /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

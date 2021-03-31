@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 class TitleLabel: UILabel {
     
     /// Init for integration by code
