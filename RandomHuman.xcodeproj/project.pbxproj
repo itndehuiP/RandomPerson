@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,18 @@
 		A00DC35A2613149600CA804F /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3592613149600CA804F /* Street.swift */; };
 		A00DC35F261317C500CA804F /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC35E261317C500CA804F /* Gender.swift */; };
 		A00DC36426131B2000CA804F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC36326131B2000CA804F /* Login.swift */; };
+		A00DC38126132C6000CA804F /* APIInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC38026132C6000CA804F /* APIInteractor.swift */; };
+		A00DC38926132E7B00CA804F /* APITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC38826132E7B00CA804F /* APITools.swift */; };
+		A00DC3972613344D00CA804F /* Encodable+APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3962613344D00CA804F /* Encodable+APIConstants.swift */; };
+		A00DC39F261335C900CA804F /* PersonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC39E261335C900CA804F /* PersonHandler.swift */; };
+		A00DC3A426133DD700CA804F /* RandomAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3A326133DD700CA804F /* RandomAPIError.swift */; };
+		A00DC3B22613EC1D00CA804F /* PersonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3B12613EC1D00CA804F /* PersonResponse.swift */; };
+		A00DC3BE261421C600CA804F /* Birthdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3BD261421C600CA804F /* Birthdate.swift */; };
+		A00DC3C4261427EE00CA804F /* MediaContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3C3261427EE00CA804F /* MediaContent.swift */; };
+		A00DC3CC261430A000CA804F /* PersonRequestConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3CB261430A000CA804F /* PersonRequestConfigurator.swift */; };
+		A00DC3D12614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3D02614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift */; };
+		A00DC3E92614590F00CA804F /* PersonResponseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3E82614590F00CA804F /* PersonResponseInfo.swift */; };
+		A00DC3EF26145D2500CA804F /* NoAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A00DC3EE26145D2500CA804F /* NoAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +77,17 @@
 		A00DC3592613149600CA804F /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 		A00DC35E261317C500CA804F /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		A00DC36326131B2000CA804F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A00DC38026132C6000CA804F /* APIInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInteractor.swift; sourceTree = "<group>"; };
+		A00DC38826132E7B00CA804F /* APITools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITools.swift; sourceTree = "<group>"; };
+		A00DC3962613344D00CA804F /* Encodable+APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+APIConstants.swift"; sourceTree = "<group>"; };
+		A00DC39E261335C900CA804F /* PersonHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHandler.swift; sourceTree = "<group>"; };
+		A00DC3A326133DD700CA804F /* RandomAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIError.swift; sourceTree = "<group>"; };
+		A00DC3B12613EC1D00CA804F /* PersonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonResponse.swift; sourceTree = "<group>"; };
+		A00DC3BD261421C600CA804F /* Birthdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthdate.swift; sourceTree = "<group>"; };
+		A00DC3C3261427EE00CA804F /* MediaContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContent.swift; sourceTree = "<group>"; };
+		A00DC3CB261430A000CA804F /* PersonRequestConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRequestConfigurator.swift; sourceTree = "<group>"; };
+		A00DC3D02614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonRequesConfigurator+APIMethods.swift"; sourceTree = "<group>"; };
+		A00DC3E82614590F00CA804F /* PersonResponseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonResponseInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00DC3EF26145D2500CA804F /* NoAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +123,7 @@
 				A00DC31A2612E78200CA804F /* RandomHumanTests */,
 				A00DC3252612E78200CA804F /* RandomHumanUITests */,
 				A00DC3022612E78100CA804F /* Products */,
+				A00DC3E22614380900CA804F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +140,7 @@
 		A00DC3032612E78100CA804F /* RandomHuman */ = {
 			isa = PBXGroup;
 			children = (
+				A00DC37F26132B6800CA804F /* Networking */,
 				A00DC36826131BF100CA804F /* View */,
 				A00DC36926131BF600CA804F /* ViewModels */,
 				A00DC337261301ED00CA804F /* Models */,
@@ -150,7 +176,9 @@
 		A00DC337261301ED00CA804F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A00DC3BC261421B700CA804F /* Date */,
 				A00DC3432613036000CA804F /* Location */,
+				A00DC3C2261423C500CA804F /* Media */,
 				A00DC33D261302CB00CA804F /* Person */,
 			);
 			path = Models;
@@ -160,9 +188,12 @@
 			isa = PBXGroup;
 			children = (
 				A00DC338261301FC00CA804F /* Person.swift */,
+				A00DC3B12613EC1D00CA804F /* PersonResponse.swift */,
 				A00DC33E261302DB00CA804F /* Name.swift */,
 				A00DC35E261317C500CA804F /* Gender.swift */,
 				A00DC36326131B2000CA804F /* Login.swift */,
+				A00DC3CB261430A000CA804F /* PersonRequestConfigurator.swift */,
+				A00DC3E82614590F00CA804F /* PersonResponseInfo.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -192,6 +223,50 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		A00DC37F26132B6800CA804F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC38D2613325B00CA804F /* Person */,
+				A00DC38026132C6000CA804F /* APIInteractor.swift */,
+				A00DC38826132E7B00CA804F /* APITools.swift */,
+				A00DC3962613344D00CA804F /* Encodable+APIConstants.swift */,
+				A00DC3A326133DD700CA804F /* RandomAPIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A00DC38D2613325B00CA804F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC39E261335C900CA804F /* PersonHandler.swift */,
+				A00DC3D02614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		A00DC3BC261421B700CA804F /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC3BD261421C600CA804F /* Birthdate.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		A00DC3C2261423C500CA804F /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC3C3261427EE00CA804F /* MediaContent.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		A00DC3E22614380900CA804F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +283,9 @@
 			dependencies = (
 			);
 			name = RandomHuman;
+			packageProductDependencies = (
+				A00DC3EE26145D2500CA804F /* NoAPI */,
+			);
 			productName = RandomHuman;
 			productReference = A00DC3012612E78100CA804F /* RandomHuman.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +357,9 @@
 				Base,
 			);
 			mainGroup = A00DC2F82612E78100CA804F;
+			packageReferences = (
+				A00DC3ED26145D2500CA804F /* XCRemoteSwiftPackageReference "noapi" */,
+			);
 			productRefGroup = A00DC3022612E78100CA804F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,13 +403,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00DC3C4261427EE00CA804F /* MediaContent.swift in Sources */,
+				A00DC3972613344D00CA804F /* Encodable+APIConstants.swift in Sources */,
 				A00DC35A2613149600CA804F /* Street.swift in Sources */,
 				A00DC34D2613056900CA804F /* Coordinate.swift in Sources */,
+				A00DC3A426133DD700CA804F /* RandomAPIError.swift in Sources */,
+				A00DC3E92614590F00CA804F /* PersonResponseInfo.swift in Sources */,
+				A00DC39F261335C900CA804F /* PersonHandler.swift in Sources */,
+				A00DC3CC261430A000CA804F /* PersonRequestConfigurator.swift in Sources */,
+				A00DC38926132E7B00CA804F /* APITools.swift in Sources */,
 				A00DC3092612E78100CA804F /* ViewController.swift in Sources */,
+				A00DC3B22613EC1D00CA804F /* PersonResponse.swift in Sources */,
 				A00DC3052612E78100CA804F /* AppDelegate.swift in Sources */,
 				A00DC339261301FC00CA804F /* Person.swift in Sources */,
 				A00DC3522613093700CA804F /* TimeZone.swift in Sources */,
 				A00DC35F261317C500CA804F /* Gender.swift in Sources */,
+				A00DC3BE261421C600CA804F /* Birthdate.swift in Sources */,
+				A00DC38126132C6000CA804F /* APIInteractor.swift in Sources */,
+				A00DC3D12614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift in Sources */,
 				A00DC3072612E78100CA804F /* SceneDelegate.swift in Sources */,
 				A00DC3452613036900CA804F /* Location.swift in Sources */,
 				A00DC36426131B2000CA804F /* Login.swift in Sources */,
@@ -665,6 +757,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00DC3ED26145D2500CA804F /* XCRemoteSwiftPackageReference "noapi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ultim8p/noapi";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00DC3EE26145D2500CA804F /* NoAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00DC3ED26145D2500CA804F /* XCRemoteSwiftPackageReference "noapi" */;
+			productName = NoAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A00DC2F92612E78100CA804F /* Project object */;
 }
