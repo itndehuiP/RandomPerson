@@ -10,4 +10,8 @@ import Foundation
 enum Gender: String, Codable {
     case female
     case male
+    
+    var fullDescription: String {
+        "Gender: \(self.rawValue.capitalized)"
+    }
 }

@@ -69,6 +69,16 @@
 		A043481126150A5400B3AB7F /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043481026150A5400B3AB7F /* Extension+UIButton.swift */; };
 		A043481C261515A800B3AB7F /* RandomRowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043481B261515A800B3AB7F /* RandomRowDelegate.swift */; };
 		A0434824261518C800B3AB7F /* PeopleSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0434823261518C800B3AB7F /* PeopleSetter.swift */; };
+		A04348332615255D00B3AB7F /* PersonView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04348322615255D00B3AB7F /* PersonView.storyboard */; };
+		A04348382615257200B3AB7F /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348372615257200B3AB7F /* PersonView.swift */; };
+		A043483D2615279B00B3AB7F /* PersonCharacteristicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A043483C2615279B00B3AB7F /* PersonCharacteristicView.xib */; };
+		A0434842261528DE00B3AB7F /* PersonCharacteristicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0434841261528DE00B3AB7F /* PersonCharacteristicView.swift */; };
+		A043484726152C7800B3AB7F /* PersonCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043484626152C7800B3AB7F /* PersonCharacteristic.swift */; };
+		A043484D26152D3A00B3AB7F /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043484C26152D3A00B3AB7F /* PersonViewModel.swift */; };
+		A043485526152FB600B3AB7F /* Extension+Array+IndexRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043485426152FB600B3AB7F /* Extension+Array+IndexRange.swift */; };
+		A043485A2615311A00B3AB7F /* CharacteristicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348592615311A00B3AB7F /* CharacteristicModel.swift */; };
+		A04348602615327A00B3AB7F /* PersonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043485F2615327A00B3AB7F /* PersonImageView.swift */; };
+		A0434868261538F300B3AB7F /* PersonCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0434867261538F300B3AB7F /* PersonCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +165,16 @@
 		A043481026150A5400B3AB7F /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
 		A043481B261515A800B3AB7F /* RandomRowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRowDelegate.swift; sourceTree = "<group>"; };
 		A0434823261518C800B3AB7F /* PeopleSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSetter.swift; sourceTree = "<group>"; };
+		A04348322615255D00B3AB7F /* PersonView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonView.storyboard; sourceTree = "<group>"; };
+		A04348372615257200B3AB7F /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		A043483C2615279B00B3AB7F /* PersonCharacteristicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCharacteristicView.xib; sourceTree = "<group>"; };
+		A0434841261528DE00B3AB7F /* PersonCharacteristicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCharacteristicView.swift; sourceTree = "<group>"; };
+		A043484626152C7800B3AB7F /* PersonCharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCharacteristic.swift; sourceTree = "<group>"; };
+		A043484C26152D3A00B3AB7F /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		A043485426152FB600B3AB7F /* Extension+Array+IndexRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Array+IndexRange.swift"; sourceTree = "<group>"; };
+		A04348592615311A00B3AB7F /* CharacteristicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicModel.swift; sourceTree = "<group>"; };
+		A043485F2615327A00B3AB7F /* PersonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImageView.swift; sourceTree = "<group>"; };
+		A0434867261538F300B3AB7F /* PersonCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +283,8 @@
 				A00DC36326131B2000CA804F /* Login.swift */,
 				A00DC3CB261430A000CA804F /* PersonRequestConfigurator.swift */,
 				A00DC3E82614590F00CA804F /* PersonResponseInfo.swift */,
+				A043484626152C7800B3AB7F /* PersonCharacteristic.swift */,
+				A04348592615311A00B3AB7F /* CharacteristicModel.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -282,10 +304,12 @@
 			isa = PBXGroup;
 			children = (
 				A00DC4282614701C00CA804F /* Button */,
+				A043485E2615325D00B3AB7F /* ImageV */,
 				A00DC41A261469EF00CA804F /* Labels */,
 				A00DC401261460B200CA804F /* Home */,
 				A04347D92615035500B3AB7F /* Navigation */,
 				A00DC46F261496EE00CA804F /* People */,
+				A04348312615254900B3AB7F /* Person */,
 				A00DC4072614656100CA804F /* Tools */,
 			);
 			path = View;
@@ -295,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				A00DC44526147CBD00CA804F /* Home */,
+				A043484B26152D2400B3AB7F /* Person */,
 				A00DC49326149FB800CA804F /* People */,
 			);
 			path = ViewModels;
@@ -397,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				A00DC435261478BC00CA804F /* Extension+Array+String.swift */,
+				A043485426152FB600B3AB7F /* Extension+Array+IndexRange.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -462,6 +488,34 @@
 				A04348062615090200B3AB7F /* ButtonStyle.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A04348312615254900B3AB7F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				A04348322615255D00B3AB7F /* PersonView.storyboard */,
+				A04348372615257200B3AB7F /* PersonView.swift */,
+				A043483C2615279B00B3AB7F /* PersonCharacteristicView.xib */,
+				A0434841261528DE00B3AB7F /* PersonCharacteristicView.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		A043484B26152D2400B3AB7F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				A043484C26152D3A00B3AB7F /* PersonViewModel.swift */,
+				A0434867261538F300B3AB7F /* PersonCellDelegate.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		A043485E2615325D00B3AB7F /* ImageV */ = {
+			isa = PBXGroup;
+			children = (
+				A043485F2615327A00B3AB7F /* PersonImageView.swift */,
+			);
+			path = ImageV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +635,8 @@
 				A00DC30E2612E78100CA804F /* Assets.xcassets in Resources */,
 				A00DC4712614970400CA804F /* PeopleView.storyboard in Resources */,
 				A00DC30C2612E78100CA804F /* HomeView.storyboard in Resources */,
+				A043483D2615279B00B3AB7F /* PersonCharacteristicView.xib in Resources */,
+				A04348332615255D00B3AB7F /* PersonView.storyboard in Resources */,
 				A00DC47E2614976B00CA804F /* PersonCell.xib in Resources */,
 				A00DC4632614861000CA804F /* RandomRowCell.xib in Resources */,
 				A04347E2261503DD00B3AB7F /* NavigationCoordinator.storyboard in Resources */,
@@ -613,6 +669,7 @@
 				A00DC35A2613149600CA804F /* Street.swift in Sources */,
 				A04347E6261503DD00B3AB7F /* NavigationController+NavBarSettable.swift in Sources */,
 				A00DC43E26147B9300CA804F /* DescriptiveLabel.swift in Sources */,
+				A04348602615327A00B3AB7F /* PersonImageView.swift in Sources */,
 				A0434824261518C800B3AB7F /* PeopleSetter.swift in Sources */,
 				A00DC34D2613056900CA804F /* Coordinate.swift in Sources */,
 				A00DC3A426133DD700CA804F /* RandomAPIError.swift in Sources */,
@@ -633,12 +690,19 @@
 				A00DC38926132E7B00CA804F /* APITools.swift in Sources */,
 				A00DC3092612E78100CA804F /* HomeView.swift in Sources */,
 				A04348022615086300B3AB7F /* NavigationBarItemOption.swift in Sources */,
+				A04348382615257200B3AB7F /* PersonView.swift in Sources */,
 				A04347E7261503DD00B3AB7F /* NavigationCoordinator.swift in Sources */,
+				A0434842261528DE00B3AB7F /* PersonCharacteristicView.swift in Sources */,
+				A043485526152FB600B3AB7F /* Extension+Array+IndexRange.swift in Sources */,
 				A00DC44A26147CF000CA804F /* DiversityQuoteGenerator.swift in Sources */,
+				A043485A2615311A00B3AB7F /* CharacteristicModel.swift in Sources */,
+				A043484726152C7800B3AB7F /* PersonCharacteristic.swift in Sources */,
 				A00DC45B261483A800CA804F /* CircleButton.swift in Sources */,
 				A00DC3B22613EC1D00CA804F /* PersonResponse.swift in Sources */,
 				A00DC4832614978300CA804F /* PersonCell.swift in Sources */,
+				A0434868261538F300B3AB7F /* PersonCellDelegate.swift in Sources */,
 				A04347E5261503DD00B3AB7F /* NavigationController+Navigable.swift in Sources */,
+				A043484D26152D3A00B3AB7F /* PersonViewModel.swift in Sources */,
 				A043481126150A5400B3AB7F /* Extension+UIButton.swift in Sources */,
 				A00DC49526149FC900CA804F /* PeopleViewModel.swift in Sources */,
 				A00DC3052612E78100CA804F /* AppDelegate.swift in Sources */,

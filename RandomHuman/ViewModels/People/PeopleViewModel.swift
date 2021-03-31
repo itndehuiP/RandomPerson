@@ -21,7 +21,6 @@ class PeopleViewModel: ObservableObject {
     func load() {
         let interactor = APIInteractor()
         interactor.getNRandomPeople(quantity: quantity) { result in
-
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else {
                     Logger().error("PeopleViewModel: Nil self in load")
@@ -42,7 +41,7 @@ class PeopleViewModel: ObservableObject {
     }
     
     func getPerson(for index: Int) -> Person? {
-        guard let people = people, index >= 0 && index < people.count else {
+        guard let people = people, people.indexRange(index) else {
             return nil
         }
         return people[index]

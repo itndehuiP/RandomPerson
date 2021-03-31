@@ -6,15 +6,15 @@
 //
 
 import UIKit
-import SDWebImage
 
 class PersonCell: UITableViewCell {
 
     @IBOutlet private weak var backView: UIView!
-    @IBOutlet private weak var thumbnailImageV: UIImageView!
+    @IBOutlet private weak var thumbnailImageV: PersonImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var natLabel: UILabel!
+    weak var delegate: PersonCellDelegate?
     
     var person: Person?
     
@@ -35,6 +35,12 @@ class PersonCell: UITableViewCell {
         let happyColor = UIColor.randomHappyColor(quantity: 4)
         backView.layer.borderColor = happyColor?.cgColor
         backView.backgroundColor = happyColor?.withAlphaComponent(0.60)
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(onTapAction(sender:)))
+        self.backView.addGestureRecognizer(gesture)
+    }
+
+    @objc func onTapAction(sender : UITapGestureRecognizer) {
+        delegate?.onTap(person: person)
     }
 
     func set(_ person: Person) {
@@ -42,7 +48,6 @@ class PersonCell: UITableViewCell {
         nameLabel.text = person.fullName
         ageLabel.text = person.ageDescription
         natLabel.text = person.nationalityDescription
-        let placeholderImage = UIImage(systemName: "person.fill")
-        imageView?.sd_setImage(with: person.thumbnailURL, placeholderImage: placeholderImage)
+        thumbnailImageV.setMedia(person.thumbnailURL)
     }
 }
