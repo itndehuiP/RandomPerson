@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A00DC3052612E78100CA804F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3042612E78100CA804F /* AppDelegate.swift */; };
-		A00DC3072612E78100CA804F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3062612E78100CA804F /* SceneDelegate.swift */; };
 		A00DC3092612E78100CA804F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3082612E78100CA804F /* ViewController.swift */; };
 		A00DC30C2612E78100CA804F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00DC30A2612E78100CA804F /* Main.storyboard */; };
 		A00DC30E2612E78100CA804F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00DC30D2612E78100CA804F /* Assets.xcassets */; };
@@ -35,6 +34,8 @@
 		A00DC3D12614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3D02614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift */; };
 		A00DC3E92614590F00CA804F /* PersonResponseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC3E82614590F00CA804F /* PersonResponseInfo.swift */; };
 		A00DC3EF26145D2500CA804F /* NoAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A00DC3EE26145D2500CA804F /* NoAPI */; };
+		A00DC403261462EB00CA804F /* HomeMainCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00DC402261462EB00CA804F /* HomeMainCard.xib */; };
+		A00DC4092614659900CA804F /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC4082614659900CA804F /* Extension+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,6 @@
 /* Begin PBXFileReference section */
 		A00DC3012612E78100CA804F /* RandomHuman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomHuman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00DC3042612E78100CA804F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A00DC3062612E78100CA804F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A00DC3082612E78100CA804F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A00DC30B2612E78100CA804F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A00DC30D2612E78100CA804F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		A00DC3CB261430A000CA804F /* PersonRequestConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRequestConfigurator.swift; sourceTree = "<group>"; };
 		A00DC3D02614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonRequesConfigurator+APIMethods.swift"; sourceTree = "<group>"; };
 		A00DC3E82614590F00CA804F /* PersonResponseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonResponseInfo.swift; sourceTree = "<group>"; };
+		A00DC402261462EB00CA804F /* HomeMainCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainCard.xib; sourceTree = "<group>"; };
+		A00DC4082614659900CA804F /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +147,6 @@
 				A00DC36926131BF600CA804F /* ViewModels */,
 				A00DC337261301ED00CA804F /* Models */,
 				A00DC3042612E78100CA804F /* AppDelegate.swift */,
-				A00DC3062612E78100CA804F /* SceneDelegate.swift */,
-				A00DC3082612E78100CA804F /* ViewController.swift */,
-				A00DC30A2612E78100CA804F /* Main.storyboard */,
 				A00DC30D2612E78100CA804F /* Assets.xcassets */,
 				A00DC30F2612E78100CA804F /* LaunchScreen.storyboard */,
 				A00DC3122612E78100CA804F /* Info.plist */,
@@ -212,6 +211,8 @@
 		A00DC36826131BF100CA804F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A00DC401261460B200CA804F /* Home */,
+				A00DC4072614656100CA804F /* Tools */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +266,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A00DC401261460B200CA804F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC3082612E78100CA804F /* ViewController.swift */,
+				A00DC30A2612E78100CA804F /* Main.storyboard */,
+				A00DC402261462EB00CA804F /* HomeMainCard.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A00DC4072614656100CA804F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A00DC4082614659900CA804F /* Extension+Color.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00DC3112612E78100CA804F /* LaunchScreen.storyboard in Resources */,
+				A00DC403261462EB00CA804F /* HomeMainCard.xib in Resources */,
 				A00DC30E2612E78100CA804F /* Assets.xcassets in Resources */,
 				A00DC30C2612E78100CA804F /* Main.storyboard in Resources */,
 			);
@@ -418,10 +438,10 @@
 				A00DC339261301FC00CA804F /* Person.swift in Sources */,
 				A00DC3522613093700CA804F /* TimeZone.swift in Sources */,
 				A00DC35F261317C500CA804F /* Gender.swift in Sources */,
+				A00DC4092614659900CA804F /* Extension+Color.swift in Sources */,
 				A00DC3BE261421C600CA804F /* Birthdate.swift in Sources */,
 				A00DC38126132C6000CA804F /* APIInteractor.swift in Sources */,
 				A00DC3D12614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift in Sources */,
-				A00DC3072612E78100CA804F /* SceneDelegate.swift in Sources */,
 				A00DC3452613036900CA804F /* Location.swift in Sources */,
 				A00DC36426131B2000CA804F /* Login.swift in Sources */,
 				A00DC33F261302DB00CA804F /* Name.swift in Sources */,
