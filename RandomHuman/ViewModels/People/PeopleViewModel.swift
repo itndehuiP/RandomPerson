@@ -12,8 +12,13 @@ class PeopleViewModel: ObservableObject {
     
     @Published var people: People?
     @Published var errorDescription: String?
+    let quantity: Int
     
-    func load(quantity: Int) {
+    init(quantity: Int) {
+        self.quantity = quantity
+    }
+    
+    func load() {
         let interactor = APIInteractor()
         interactor.getNRandomPeople(quantity: quantity) { result in
 

@@ -11,7 +11,7 @@
         <!--People View-->
         <scene sceneID="bwl-e9-BgW">
             <objects>
-                <viewController id="boM-K3-Aca" customClass="PeopleView" customModule="RandomHuman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeopleView" id="boM-K3-Aca" customClass="PeopleView" customModule="RandomHuman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fuJ-g6-7oV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

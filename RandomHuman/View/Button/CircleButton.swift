@@ -20,10 +20,6 @@ class CircleButton: UIButton {
         super.init(coder: coder)
         specifiInit()
     }
-
-//    override func layoutSubviews() {
-//
-//    }
     
     private func specifiInit(){
         self.backgroundColor = UIColor.randomHappyColor(quantity: 2)

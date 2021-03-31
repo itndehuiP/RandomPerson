@@ -12,7 +12,7 @@ import Combine
 class PeopleView: UIViewController {
     
     @IBOutlet weak var peopleTableView: UITableView!
-    let viewModel = PeopleViewModel()
+    var viewModel: PeopleViewModel?
     private var cancellables: Set<AnyCancellable> = []
     private var lastCount: Int?
     
@@ -20,7 +20,12 @@ class PeopleView: UIViewController {
         super.viewDidLoad()
         configureView()
         fetchPeople()
-        viewModel.load(quantity: 4)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureNavBar()
+        viewModel?.load()
     }
     
     private func configureView() {
@@ -30,8 +35,25 @@ class PeopleView: UIViewController {
         peopleTableView.separatorStyle = .none
     }
     
+    private func configureNavBar() {
+        let backItem = NavigationBarItem(option: .back,
+                                         selector: #selector(goBack),
+                                         title: "Back",
+                                         systemIMgName: "chevron.left",
+                                         style: .highlighted)
+        self.navigationController?.setNavigationBar(with: [backItem])
+    }
+    
+    @objc private func goBack() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func set(_ setter: PeopleSetter) {
+        viewModel = PeopleViewModel(quantity: setter.discoveryQuantity)
+    }
+    
     private func fetchPeople() {
-        viewModel.$people
+        viewModel?.$people
             .sink {[weak self] peope in
                 guard let self = self else {
                     Logger().critical("PeopleView: Nil self in fetchPeople")
@@ -52,7 +74,7 @@ extension PeopleView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let person = viewModel.getPerson(for: indexPath.row), let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell") as? PersonCell else {
+        guard let person = viewModel?.getPerson(for: indexPath.row), let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell") as? PersonCell else {
             Logger().debug("Could not load PersonCell in cellForRow")
             return UITableViewCell()
         }

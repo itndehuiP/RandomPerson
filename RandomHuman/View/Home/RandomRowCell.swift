@@ -9,11 +9,10 @@ import UIKit
 
 class RandomRowCell: UITableViewCell {
     
-    
     @IBOutlet private weak var firstButton: CircleButton!
     @IBOutlet weak var secondButton: CircleButton!
     @IBOutlet weak var thirdButton: CircleButton!
-    
+    weak var delegate: RandomRowDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +30,17 @@ class RandomRowCell: UITableViewCell {
         firstButton.setTitle(title, for: .normal)
         secondButton.setTitle(title, for: .normal)
         thirdButton.setTitle(title, for: .normal)
+        setActions()
     }
 
+    private func setActions() {
+        firstButton.addTarget(self, action: #selector(crateRandomNumber), for: .touchUpInside)
+        secondButton.addTarget(self, action: #selector(crateRandomNumber), for: .touchUpInside)
+        thirdButton.addTarget(self, action: #selector(crateRandomNumber), for: .touchUpInside)
+    }
+    
+    @objc private func crateRandomNumber() {
+        let random = Int.random(in: 1..<50)
+        delegate?.onButtonTapped(value: random)
+    }
 }
