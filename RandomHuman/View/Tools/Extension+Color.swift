@@ -15,13 +15,20 @@ extension UIColor {
     static let secondHighlight = UIColor(named: "SecondHighlight")
     static let theme = UIColor(named: "Theme")
     
-    static var randomHappyColor: UIColor? {
-        let random = Int.random(in: 0...2)
+    static func randomHappyColor(quantity: Int) -> UIColor? {
+        let quantity = max(quantity, 2)
+        let quantityM = min(quantity, 4)
+        let random = Int.random(in: 0...quantityM)
         switch random {
         case 0:
             return UIColor.alert
-        default:
+        case 2:
             return UIColor.highlight
+        case 3:
+            return UIColor.alert
+        default:
+            return UIColor.secondHighlight
         }
     }
+    
 }

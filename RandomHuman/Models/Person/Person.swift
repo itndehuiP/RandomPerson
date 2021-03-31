@@ -68,6 +68,21 @@ struct Person: Codable {
             return "Nationality: No available"
         }
     }
+    
+    var thumbnailURL: URL? {
+        guard let mediaURL = media?.thumbnail else {
+            return nil
+        }
+        return URL(string: mediaURL)
+    }
+    
+    
+    var mediumMediaURL: URL? {
+        guard let mediaURL = media?.medium else {
+            return nil
+        }
+        return URL(string: mediaURL)
+    }
 }
 
 

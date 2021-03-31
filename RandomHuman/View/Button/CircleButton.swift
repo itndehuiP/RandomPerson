@@ -26,7 +26,7 @@ class CircleButton: UIButton {
 //    }
     
     private func specifiInit(){
-        self.backgroundColor = UIColor.randomHappyColor
+        self.backgroundColor = UIColor.randomHappyColor(quantity: 2)
         self.titleLabel?.font = .preferredFont(forTextStyle: .title1)
         self.titleLabel?.textColor = UIColor.constrast
         self.tintColor = UIColor.constrast

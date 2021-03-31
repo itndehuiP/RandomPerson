@@ -52,6 +52,7 @@
 		A00DC47E2614976B00CA804F /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00DC47D2614976B00CA804F /* PersonCell.xib */; };
 		A00DC4832614978300CA804F /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC4822614978300CA804F /* PersonCell.swift */; };
 		A00DC49526149FC900CA804F /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC49426149FC900CA804F /* PeopleViewModel.swift */; };
+		A04347C92614A97C00B3AB7F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A04347C82614A97C00B3AB7F /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04347C92614A97C00B3AB7F /* SDWebImage in Frameworks */,
 				A00DC3EF26145D2500CA804F /* NoAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +418,7 @@
 			name = RandomHuman;
 			packageProductDependencies = (
 				A00DC3EE26145D2500CA804F /* NoAPI */,
+				A04347C82614A97C00B3AB7F /* SDWebImage */,
 			);
 			productName = RandomHuman;
 			productReference = A00DC3012612E78100CA804F /* RandomHuman.app */;
@@ -490,6 +493,7 @@
 			mainGroup = A00DC2F82612E78100CA804F;
 			packageReferences = (
 				A00DC3ED26145D2500CA804F /* XCRemoteSwiftPackageReference "noapi" */,
+				A04347C72614A97C00B3AB7F /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = A00DC3022612E78100CA804F /* Products */;
 			projectDirPath = "";
@@ -915,6 +919,14 @@
 				minimumVersion = 0.0.4;
 			};
 		};
+		A04347C72614A97C00B3AB7F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -922,6 +934,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A00DC3ED26145D2500CA804F /* XCRemoteSwiftPackageReference "noapi" */;
 			productName = NoAPI;
+		};
+		A04347C82614A97C00B3AB7F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A04347C72614A97C00B3AB7F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
