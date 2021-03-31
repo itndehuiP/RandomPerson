@@ -16,6 +16,7 @@ struct Person: Codable {
     let birthdate: Birthdate?
     let cellphone: String?
     let media: MediaContent?
+    let nationality: String?
     
     init(name: Name? = nil,
          gender: Gender? = nil,
@@ -24,7 +25,8 @@ struct Person: Codable {
          username: Login? = nil,
          birthdate: Birthdate? = nil,
          cellphone: String?,
-         media: MediaContent? = nil) {
+         media: MediaContent? = nil,
+         nationality: String? = nil) {
         self.name = name
         self.gender = gender
         self.location = location
@@ -33,6 +35,7 @@ struct Person: Codable {
         self.birthdate = birthdate
         self.cellphone = cellphone
         self.media = media
+        self.nationality = nationality
     }
     
     private enum CodingKeys: String, CodingKey {
@@ -44,6 +47,26 @@ struct Person: Codable {
         case birthdate = "dob"
         case cellphone = "cell"
         case media = "picture"
+        case nationality = "nat"
+    }
+    
+    var fullName: String? {
+        name?.fullname
+    }
+    
+    var ageDescription: String {
+        if let age = birthdate?.age {
+            return "Age: \(age)"
+        }
+        return "Age: No available"
+    }
+    
+    var nationalityDescription: String {
+        if let nationality = nationality {
+            return "Nationality: \(nationality)"
+        } else {
+            return "Nationality: No available"
+        }
     }
 }
 

@@ -11,4 +11,11 @@ struct Name: Codable {
     let title: String?
     let first: String?
     let last: String?
+    
+    var fullname: String? {
+        guard title != nil || first != nil || last != nil else {
+            return nil
+        }
+        return "\(title ?? "") \(first ?? "") \(last ?? "")"
+    }
 }
