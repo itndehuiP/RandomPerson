@@ -29,13 +29,12 @@ class PersonCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
     private func configureView() {
-        self.backView.layer.cornerRadius = 5
-        self.backView.layer.borderWidth = 2
+        backView.layer.cornerRadius = 5
+        backView.layer.borderWidth = 2
         let happyColor = UIColor.randomHappyColor(quantity: 4)
-        self.backView.layer.borderColor = happyColor?.cgColor
-        self.backView.backgroundColor = happyColor?.withAlphaComponent(0.60)
+        backView.layer.borderColor = happyColor?.cgColor
+        backView.backgroundColor = happyColor?.withAlphaComponent(0.60)
     }
 
     func set(_ person: Person) {
