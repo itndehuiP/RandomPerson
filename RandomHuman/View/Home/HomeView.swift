@@ -8,7 +8,7 @@
 import UIKit
 import os.log
 
-class ViewController: UIViewController {
+class HomeView: UIViewController {
     @IBOutlet private weak var panelInstructions: DescriptiveLabel!
     @IBOutlet weak var discoverTableView: UITableView!
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 }
 
 //MARK: Table View Data Source
-extension ViewController: UITableViewDataSource {
+extension HomeView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         8
     }
@@ -42,6 +42,6 @@ extension ViewController: UITableViewDataSource {
 }
 
 //MARK: Table View Delegate
-extension ViewController: UITableViewDelegate {
+extension HomeView: UITableViewDelegate {
     
 }
