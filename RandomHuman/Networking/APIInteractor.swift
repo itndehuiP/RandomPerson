@@ -33,7 +33,14 @@ struct APIInteractor {
      - Parameter onCompletion: A handler containing the result of the request
      */
     func getThreeRandomPerson(onCompletion: PeopleHandler) {
-        _ = PersonRequestConfigurator(results: "3").api(method: .get, heads: nil)
+        getNRandomPeople(quantity: 3) { result in
+            onCompletion?(result)
+        }
+    }
+    
+    func getNRandomPeople(quantity: Int, onCompletion: PeopleHandler) {
+        let quantityF = max(1, quantity)
+        _ = PersonRequestConfigurator(results: "\(quantityF)").api(method: .get, heads: nil)
             .onSuccess({ response in
                 onCompletion?(.success(response?.results))
             })
