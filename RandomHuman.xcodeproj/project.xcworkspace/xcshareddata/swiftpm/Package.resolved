@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CodableUtils",
+        "repositoryURL": "https://github.com/ultim8p/CodableUtils",
+        "state": {
+          "branch": null,
+          "revision": "45a6378f16e700fdbbd6df13a67ebad1f517af80",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "Mergeable",
+        "repositoryURL": "https://github.com/ultim8p/Mergeable",
+        "state": {
+          "branch": null,
+          "revision": "00fdf637275ca344a6a5b405be4ae0892226676d",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "NoAPI",
+        "repositoryURL": "https://github.com/ultim8p/noapi",
+        "state": {
+          "branch": null,
+          "revision": "88a588d64b201e3c550543d8de9a8b3516879afe",
+          "version": "0.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
