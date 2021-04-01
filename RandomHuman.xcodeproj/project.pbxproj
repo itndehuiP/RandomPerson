@@ -53,15 +53,6 @@
 		A00DC4832614978300CA804F /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC4822614978300CA804F /* PersonCell.swift */; };
 		A00DC49526149FC900CA804F /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DC49426149FC900CA804F /* PeopleViewModel.swift */; };
 		A04347C92614A97C00B3AB7F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A04347C82614A97C00B3AB7F /* SDWebImage */; };
-		A04347E1261503DD00B3AB7F /* NavigateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347DA261503DD00B3AB7F /* NavigateOption.swift */; };
-		A04347E2261503DD00B3AB7F /* NavigationCoordinator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04347DB261503DD00B3AB7F /* NavigationCoordinator.storyboard */; };
-		A04347E3261503DD00B3AB7F /* NavigationBarSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347DC261503DD00B3AB7F /* NavigationBarSettable.swift */; };
-		A04347E4261503DD00B3AB7F /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347DD261503DD00B3AB7F /* Navigable.swift */; };
-		A04347E5261503DD00B3AB7F /* NavigationController+Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347DE261503DD00B3AB7F /* NavigationController+Navigable.swift */; };
-		A04347E6261503DD00B3AB7F /* NavigationController+NavBarSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347DF261503DD00B3AB7F /* NavigationController+NavBarSettable.swift */; };
-		A04347E7261503DD00B3AB7F /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347E0261503DD00B3AB7F /* NavigationCoordinator.swift */; };
-		A04347EE2615044B00B3AB7F /* ViewControllerIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347EC2615044B00B3AB7F /* ViewControllerIdentifiable.swift */; };
-		A04347EF2615044B00B3AB7F /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347ED2615044B00B3AB7F /* StoryboardIdentifiable.swift */; };
 		A04347F42615056700B3AB7F /* NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347F32615056700B3AB7F /* NavigationBarItem.swift */; };
 		A04348022615086300B3AB7F /* NavigationBarItemOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348012615086300B3AB7F /* NavigationBarItemOption.swift */; };
 		A04348072615090200B3AB7F /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348062615090200B3AB7F /* ButtonStyle.swift */; };
@@ -93,6 +84,20 @@
 		A04348C72615AEA200B3AB7F /* IntHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348C62615AEA200B3AB7F /* IntHandler.swift */; };
 		A04348E02615BB5300B3AB7F /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04348DF2615BB5300B3AB7F /* LoaderView.xib */; };
 		A04348E52615BC0900B3AB7F /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348E42615BC0900B3AB7F /* LoaderView.swift */; };
+		A04348F12615C55000B3AB7F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348F02615C55000B3AB7F /* Defaults.swift */; };
+		A04348F72615C59D00B3AB7F /* UseRestrictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348F62615C59D00B3AB7F /* UseRestrictor.swift */; };
+		A04348FF2615C68D00B3AB7F /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348FE2615C68D00B3AB7F /* Extension+Date.swift */; };
+		A043490D2615C9D100B3AB7F /* ViewControllerIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043490B2615C9D100B3AB7F /* ViewControllerIdentifiable.swift */; };
+		A043490E2615C9D100B3AB7F /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043490C2615C9D100B3AB7F /* StoryboardIdentifiable.swift */; };
+		A04349192615CA0C00B3AB7F /* NavigationController+NavBarSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349122615CA0B00B3AB7F /* NavigationController+NavBarSettable.swift */; };
+		A043491A2615CA0C00B3AB7F /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349132615CA0B00B3AB7F /* NavigationCoordinator.swift */; };
+		A043491B2615CA0C00B3AB7F /* NavigationCoordinator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04349142615CA0B00B3AB7F /* NavigationCoordinator.storyboard */; };
+		A043491C2615CA0C00B3AB7F /* NavigationController+Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349152615CA0B00B3AB7F /* NavigationController+Navigable.swift */; };
+		A043491D2615CA0C00B3AB7F /* NavigationBarSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349162615CA0B00B3AB7F /* NavigationBarSettable.swift */; };
+		A043491E2615CA0C00B3AB7F /* Navigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349172615CA0C00B3AB7F /* Navigable.swift */; };
+		A043491F2615CA0C00B3AB7F /* NavigateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349182615CA0C00B3AB7F /* NavigateOption.swift */; };
+		A04349272615CB4B00B3AB7F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04349262615CB4B00B3AB7F /* HomeViewModel.swift */; };
+		A043492C2615CC5700B3AB7F /* ResctrictionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043492B2615CC5700B3AB7F /* ResctrictionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,15 +168,6 @@
 		A00DC47D2614976B00CA804F /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		A00DC4822614978300CA804F /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		A00DC49426149FC900CA804F /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
-		A04347DA261503DD00B3AB7F /* NavigateOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigateOption.swift; path = ../../../../PokeDemo/PokeDemo/View/Navigation/NavigateOption.swift; sourceTree = "<group>"; };
-		A04347DB261503DD00B3AB7F /* NavigationCoordinator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NavigationCoordinator.storyboard; path = ../../../../PokeDemo/PokeDemo/View/Navigation/NavigationCoordinator.storyboard; sourceTree = "<group>"; };
-		A04347DC261503DD00B3AB7F /* NavigationBarSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationBarSettable.swift; path = ../../../../PokeDemo/PokeDemo/View/Navigation/NavigationBarSettable.swift; sourceTree = "<group>"; };
-		A04347DD261503DD00B3AB7F /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Navigable.swift; path = ../../../../PokeDemo/PokeDemo/View/Navigation/Navigable.swift; sourceTree = "<group>"; };
-		A04347DE261503DD00B3AB7F /* NavigationController+Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NavigationController+Navigable.swift"; path = "../../../../PokeDemo/PokeDemo/View/Navigation/NavigationController+Navigable.swift"; sourceTree = "<group>"; };
-		A04347DF261503DD00B3AB7F /* NavigationController+NavBarSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NavigationController+NavBarSettable.swift"; path = "../../../../PokeDemo/PokeDemo/View/Navigation/NavigationController+NavBarSettable.swift"; sourceTree = "<group>"; };
-		A04347E0261503DD00B3AB7F /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationCoordinator.swift; path = ../../../../PokeDemo/PokeDemo/View/Navigation/NavigationCoordinator.swift; sourceTree = "<group>"; };
-		A04347EC2615044B00B3AB7F /* ViewControllerIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerIdentifiable.swift; path = "../../../../PokeDemo/PokeDemo/ViewModel-Logic/Navigation/ViewControllerIdentifiable.swift"; sourceTree = "<group>"; };
-		A04347ED2615044B00B3AB7F /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardIdentifiable.swift; path = "../../../../PokeDemo/PokeDemo/ViewModel-Logic/Navigation/StoryboardIdentifiable.swift"; sourceTree = "<group>"; };
 		A04347F32615056700B3AB7F /* NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItem.swift; sourceTree = "<group>"; };
 		A04348012615086300B3AB7F /* NavigationBarItemOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemOption.swift; sourceTree = "<group>"; };
 		A04348062615090200B3AB7F /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
@@ -203,6 +199,20 @@
 		A04348C62615AEA200B3AB7F /* IntHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntHandler.swift; sourceTree = "<group>"; };
 		A04348DF2615BB5300B3AB7F /* LoaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
 		A04348E42615BC0900B3AB7F /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		A04348F02615C55000B3AB7F /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		A04348F62615C59D00B3AB7F /* UseRestrictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseRestrictor.swift; sourceTree = "<group>"; };
+		A04348FE2615C68D00B3AB7F /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		A043490B2615C9D100B3AB7F /* ViewControllerIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerIdentifiable.swift; sourceTree = "<group>"; };
+		A043490C2615C9D100B3AB7F /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		A04349122615CA0B00B3AB7F /* NavigationController+NavBarSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationController+NavBarSettable.swift"; sourceTree = "<group>"; };
+		A04349132615CA0B00B3AB7F /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		A04349142615CA0B00B3AB7F /* NavigationCoordinator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationCoordinator.storyboard; sourceTree = "<group>"; };
+		A04349152615CA0B00B3AB7F /* NavigationController+Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationController+Navigable.swift"; sourceTree = "<group>"; };
+		A04349162615CA0B00B3AB7F /* NavigationBarSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarSettable.swift; sourceTree = "<group>"; };
+		A04349172615CA0C00B3AB7F /* Navigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigable.swift; sourceTree = "<group>"; };
+		A04349182615CA0C00B3AB7F /* NavigateOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigateOption.swift; sourceTree = "<group>"; };
+		A04349262615CB4B00B3AB7F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A043492B2615CC5700B3AB7F /* ResctrictionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResctrictionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,9 +267,9 @@
 			isa = PBXGroup;
 			children = (
 				A00DC37F26132B6800CA804F /* Networking */,
+				A00DC337261301ED00CA804F /* Models */,
 				A00DC36826131BF100CA804F /* View */,
 				A00DC36926131BF600CA804F /* ViewModels */,
-				A00DC337261301ED00CA804F /* Models */,
 				A00DC3042612E78100CA804F /* AppDelegate.swift */,
 				A00DC30D2612E78100CA804F /* Assets.xcassets */,
 				A00DC30F2612E78100CA804F /* LaunchScreen.storyboard */,
@@ -291,6 +301,7 @@
 			children = (
 				A00DC4342614787F00CA804F /* Array */,
 				A00DC3BC261421B700CA804F /* Date */,
+				A04348EF2615C51900B3AB7F /* Defaults */,
 				A00DC42C2614764D00CA804F /* Diversity */,
 				A00DC3432613036000CA804F /* Location */,
 				A00DC3C2261423C500CA804F /* Media */,
@@ -298,6 +309,7 @@
 				A04347EB2615042B00B3AB7F /* Navigation */,
 				A00DC33D261302CB00CA804F /* Person */,
 				A04348C52615AE6E00B3AB7F /* People */,
+				A04348F52615C58700B3AB7F /* UseRestrictor */,
 				A04348BC2615ADFC00B3AB7F /* Void */,
 			);
 			path = Models;
@@ -384,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				A00DC3BD261421C600CA804F /* Birthdate.swift */,
+				A04348FE2615C68D00B3AB7F /* Extension+Date.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -412,6 +425,7 @@
 				A00DC30A2612E78100CA804F /* HomeView.storyboard */,
 				A00DC4622614861000CA804F /* RandomRowCell.xib */,
 				A00DC4672614868200CA804F /* RandomRowCell.swift */,
+				A043492B2615CC5700B3AB7F /* ResctrictionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -469,6 +483,7 @@
 			children = (
 				A00DC44926147CF000CA804F /* DiversityQuoteGenerator.swift */,
 				A043481B261515A800B3AB7F /* RandomRowDelegate.swift */,
+				A04349262615CB4B00B3AB7F /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -504,13 +519,13 @@
 		A04347D92615035500B3AB7F /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				A04347DD261503DD00B3AB7F /* Navigable.swift */,
-				A04347DA261503DD00B3AB7F /* NavigateOption.swift */,
-				A04347DC261503DD00B3AB7F /* NavigationBarSettable.swift */,
-				A04347DB261503DD00B3AB7F /* NavigationCoordinator.storyboard */,
-				A04347E0261503DD00B3AB7F /* NavigationCoordinator.swift */,
-				A04347DF261503DD00B3AB7F /* NavigationController+NavBarSettable.swift */,
-				A04347DE261503DD00B3AB7F /* NavigationController+Navigable.swift */,
+				A04349172615CA0C00B3AB7F /* Navigable.swift */,
+				A04349182615CA0C00B3AB7F /* NavigateOption.swift */,
+				A04349162615CA0B00B3AB7F /* NavigationBarSettable.swift */,
+				A04349122615CA0B00B3AB7F /* NavigationController+NavBarSettable.swift */,
+				A04349152615CA0B00B3AB7F /* NavigationController+Navigable.swift */,
+				A04349142615CA0B00B3AB7F /* NavigationCoordinator.storyboard */,
+				A04349132615CA0B00B3AB7F /* NavigationCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -518,8 +533,8 @@
 		A04347EB2615042B00B3AB7F /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				A04347ED2615044B00B3AB7F /* StoryboardIdentifiable.swift */,
-				A04347EC2615044B00B3AB7F /* ViewControllerIdentifiable.swift */,
+				A043490C2615C9D100B3AB7F /* StoryboardIdentifiable.swift */,
+				A043490B2615C9D100B3AB7F /* ViewControllerIdentifiable.swift */,
 				A04347F32615056700B3AB7F /* NavigationBarItem.swift */,
 				A04348012615086300B3AB7F /* NavigationBarItemOption.swift */,
 				A04348062615090200B3AB7F /* ButtonStyle.swift */,
@@ -614,6 +629,22 @@
 				A04348E42615BC0900B3AB7F /* LoaderView.swift */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		A04348EF2615C51900B3AB7F /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				A04348F02615C55000B3AB7F /* Defaults.swift */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		A04348F52615C58700B3AB7F /* UseRestrictor */ = {
+			isa = PBXGroup;
+			children = (
+				A04348F62615C59D00B3AB7F /* UseRestrictor.swift */,
+			);
+			path = UseRestrictor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -729,6 +760,7 @@
 			files = (
 				A00DC3112612E78100CA804F /* LaunchScreen.storyboard in Resources */,
 				A00DC403261462EB00CA804F /* HomeMainCard.xib in Resources */,
+				A043491B2615CA0C00B3AB7F /* NavigationCoordinator.storyboard in Resources */,
 				A04348E02615BB5300B3AB7F /* LoaderView.xib in Resources */,
 				A043486E2615407200B3AB7F /* MapView.storyboard in Resources */,
 				A00DC42E2614772700CA804F /* DiversityQuotes.plist in Resources */,
@@ -739,7 +771,6 @@
 				A04348332615255D00B3AB7F /* PersonView.storyboard in Resources */,
 				A00DC47E2614976B00CA804F /* PersonCell.xib in Resources */,
 				A00DC4632614861000CA804F /* RandomRowCell.xib in Resources */,
-				A04347E2261503DD00B3AB7F /* NavigationCoordinator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,16 +799,18 @@
 				A00DC3972613344D00CA804F /* Encodable+APIConstants.swift in Sources */,
 				A04348E52615BC0900B3AB7F /* LoaderView.swift in Sources */,
 				A00DC35A2613149600CA804F /* Street.swift in Sources */,
-				A04347E6261503DD00B3AB7F /* NavigationController+NavBarSettable.swift in Sources */,
 				A00DC43E26147B9300CA804F /* DescriptiveLabel.swift in Sources */,
+				A04349272615CB4B00B3AB7F /* HomeViewModel.swift in Sources */,
 				A04348602615327A00B3AB7F /* PersonImageView.swift in Sources */,
+				A043492C2615CC5700B3AB7F /* ResctrictionView.swift in Sources */,
 				A0434824261518C800B3AB7F /* PeopleSetter.swift in Sources */,
 				A00DC34D2613056900CA804F /* Coordinate.swift in Sources */,
 				A00DC3A426133DD700CA804F /* RandomAPIError.swift in Sources */,
 				A00DC3E92614590F00CA804F /* PersonResponseInfo.swift in Sources */,
 				A04347F42615056700B3AB7F /* NavigationBarItem.swift in Sources */,
 				A04348BE2615AE0F00B3AB7F /* VoidHandler.swift in Sources */,
-				A04347E3261503DD00B3AB7F /* NavigationBarSettable.swift in Sources */,
+				A043491A2615CA0C00B3AB7F /* NavigationCoordinator.swift in Sources */,
+				A043491E2615CA0C00B3AB7F /* Navigable.swift in Sources */,
 				A0434879261541AB00B3AB7F /* MapViewModel.swift in Sources */,
 				A043489826158CC800B3AB7F /* QuestionMarkImage.swift in Sources */,
 				A043481C261515A800B3AB7F /* RandomRowDelegate.swift in Sources */,
@@ -785,20 +818,20 @@
 				A00DC39F261335C900CA804F /* PersonHandler.swift in Sources */,
 				A00DC411261466EA00CA804F /* HomeMainCard.swift in Sources */,
 				A00DC3CC261430A000CA804F /* PersonRequestConfigurator.swift in Sources */,
+				A04348FF2615C68D00B3AB7F /* Extension+Date.swift in Sources */,
 				A00DC4242614700D00CA804F /* HighlightedButton.swift in Sources */,
 				A00DC4792614971800CA804F /* PeopleView.swift in Sources */,
-				A04347EF2615044B00B3AB7F /* StoryboardIdentifiable.swift in Sources */,
-				A04347E4261503DD00B3AB7F /* Navigable.swift in Sources */,
-				A04347EE2615044B00B3AB7F /* ViewControllerIdentifiable.swift in Sources */,
 				A00DC4162614673500CA804F /* NibLoadable.swift in Sources */,
+				A043491D2615CA0C00B3AB7F /* NavigationBarSettable.swift in Sources */,
 				A043480C2615096900B3AB7F /* LabelButton.swift in Sources */,
 				A00DC38926132E7B00CA804F /* APITools.swift in Sources */,
 				A00DC3092612E78100CA804F /* HomeView.swift in Sources */,
 				A04348022615086300B3AB7F /* NavigationBarItemOption.swift in Sources */,
 				A04348382615257200B3AB7F /* PersonView.swift in Sources */,
-				A04347E7261503DD00B3AB7F /* NavigationCoordinator.swift in Sources */,
+				A043490E2615C9D100B3AB7F /* StoryboardIdentifiable.swift in Sources */,
 				A0434842261528DE00B3AB7F /* PersonCharacteristicView.swift in Sources */,
 				A043485526152FB600B3AB7F /* Extension+Array+IndexRange.swift in Sources */,
+				A04349192615CA0C00B3AB7F /* NavigationController+NavBarSettable.swift in Sources */,
 				A00DC44A26147CF000CA804F /* DiversityQuoteGenerator.swift in Sources */,
 				A043485A2615311A00B3AB7F /* CharacteristicModel.swift in Sources */,
 				A043484726152C7800B3AB7F /* PersonCharacteristic.swift in Sources */,
@@ -807,8 +840,9 @@
 				A00DC3B22613EC1D00CA804F /* PersonResponse.swift in Sources */,
 				A04348A826158E6800B3AB7F /* Extension+Color.swift in Sources */,
 				A00DC4832614978300CA804F /* PersonCell.swift in Sources */,
+				A043491F2615CA0C00B3AB7F /* NavigateOption.swift in Sources */,
 				A0434868261538F300B3AB7F /* PersonCellDelegate.swift in Sources */,
-				A04347E5261503DD00B3AB7F /* NavigationController+Navigable.swift in Sources */,
+				A043490D2615C9D100B3AB7F /* ViewControllerIdentifiable.swift in Sources */,
 				A043484D26152D3A00B3AB7F /* PersonViewModel.swift in Sources */,
 				A043481126150A5400B3AB7F /* Extension+UIButton.swift in Sources */,
 				A00DC49526149FC900CA804F /* PeopleViewModel.swift in Sources */,
@@ -819,15 +853,17 @@
 				A04348732615418800B3AB7F /* MapView.swift in Sources */,
 				A00DC3522613093700CA804F /* TimeZone.swift in Sources */,
 				A00DC35F261317C500CA804F /* Gender.swift in Sources */,
+				A04348F72615C59D00B3AB7F /* UseRestrictor.swift in Sources */,
 				A04348072615090200B3AB7F /* ButtonStyle.swift in Sources */,
 				A04348872615859E00B3AB7F /* MapAnnotation.swift in Sources */,
+				A04348F12615C55000B3AB7F /* Defaults.swift in Sources */,
 				A00DC4092614659900CA804F /* Extension+UIColor.swift in Sources */,
 				A00DC41C26146A0200CA804F /* TitleLabel.swift in Sources */,
-				A04347E1261503DD00B3AB7F /* NavigateOption.swift in Sources */,
 				A00DC436261478BC00CA804F /* Extension+Array+String.swift in Sources */,
 				A00DC3BE261421C600CA804F /* Birthdate.swift in Sources */,
 				A00DC38126132C6000CA804F /* APIInteractor.swift in Sources */,
 				A00DC3D12614319F00CA804F /* PersonRequesConfigurator+APIMethods.swift in Sources */,
+				A043491C2615CA0C00B3AB7F /* NavigationController+Navigable.swift in Sources */,
 				A00DC3452613036900CA804F /* Location.swift in Sources */,
 				A00DC36426131B2000CA804F /* Login.swift in Sources */,
 				A00DC4682614868200CA804F /* RandomRowCell.swift in Sources */,
