@@ -19,8 +19,7 @@ class HomeMainCard: UIView, NibLoadable {
     
     /// Init for integration by code
     override init(frame: CGRect) {
-        
-    super.init(frame: frame)
+        super.init(frame: frame)
         setupFromNib()
         specifiInit()
     }

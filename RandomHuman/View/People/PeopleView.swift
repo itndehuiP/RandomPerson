@@ -19,19 +19,19 @@ class PeopleView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        fetchPeople()
+        registerFetchPeople()
+        viewModel?.load()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureNavBar()
-        viewModel?.load()
     }
     
     private func configureView() {
         peopleTableView.register(UINib(nibName: "PersonCell", bundle: nil), forCellReuseIdentifier: "PersonCell")
         peopleTableView.dataSource = self
-        peopleTableView.delegate = self
+        peopleTableView.allowsSelection = false
         peopleTableView.separatorStyle = .none
     }
     
@@ -39,7 +39,7 @@ class PeopleView: UIViewController {
         let backItem = NavigationBarItem(option: .back,
                                          selector: #selector(goBack),
                                          title: "Back",
-                                         systemIMgName: "chevron.left",
+                                         systemImgName: "chevron.left",
                                          style: .highlighted)
         self.navigationController?.setNavigationBar(with: [backItem])
     }
@@ -48,11 +48,15 @@ class PeopleView: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    private func showPersonDetail(_ person: Person) {
+        self.navigationController?.push(option: .person(person))
+    }
+    
     func set(_ setter: PeopleSetter) {
         viewModel = PeopleViewModel(quantity: setter.discoveryQuantity)
     }
     
-    private func fetchPeople() {
+    private func registerFetchPeople() {
         viewModel?.$people
             .sink {[weak self] peope in
                 guard let self = self else {
@@ -79,10 +83,17 @@ extension PeopleView: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.set(person)
+        cell.delegate = self
         return cell
     }
 }
 
-extension PeopleView: UITableViewDelegate {
-    
+extension PeopleView: PersonCellDelegate {
+    func onTap(person: Person?) {
+        guard let person = person else {
+            Logger().debug("PeopleView: Could not load Person in didSelectRowAt")
+            return
+        }
+        showPersonDetail(person)
+    }
 }

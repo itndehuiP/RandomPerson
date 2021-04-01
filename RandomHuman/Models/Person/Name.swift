@@ -16,6 +16,7 @@ struct Name: Codable {
         guard title != nil || first != nil || last != nil else {
             return nil
         }
-        return "\(title ?? "") \(first ?? "") \(last ?? "")"
+        let titleDescription = title != nil ? "\(title!)." : ""
+        return "\(titleDescription) \(first ?? "") \(last ?? "")"
     }
 }

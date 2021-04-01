@@ -54,6 +54,10 @@ struct Person: Codable {
         name?.fullname
     }
     
+    var fullnameDescription: String {
+        "Name: \(fullName ?? "")"
+    }
+    
     var ageDescription: String {
         if let age = birthdate?.age {
             return "Age: \(age)"
@@ -69,6 +73,15 @@ struct Person: Codable {
         }
     }
     
+    var contactDescription: String {
+        "email: \(email ?? "No available")"
+    }
+    
+    var addressFullDescription: String {
+        "Address: \(location?.address ?? "No available")"
+    }
+    
+    //MARK: Media URL
     var thumbnailURL: URL? {
         guard let mediaURL = media?.thumbnail else {
             return nil
@@ -79,6 +92,13 @@ struct Person: Codable {
     
     var mediumMediaURL: URL? {
         guard let mediaURL = media?.medium else {
+            return nil
+        }
+        return URL(string: mediaURL)
+    }
+    
+    var bigMediaURL: URL? {
+        guard let mediaURL = media?.large else {
             return nil
         }
         return URL(string: mediaURL)

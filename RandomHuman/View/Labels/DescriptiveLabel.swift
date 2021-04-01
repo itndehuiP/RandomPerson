@@ -27,4 +27,8 @@ class DescriptiveLabel: UILabel {
         self.textAlignment = .center
         self.numberOfLines = 0
     }
+    
+    func changeAlignmet(_ alignment: NSTextAlignment) {
+        self.textAlignment = alignment
+    }
 }
