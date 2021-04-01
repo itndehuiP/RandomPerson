@@ -56,4 +56,24 @@ class RandomHumanTests: XCTestCase {
         XCTAssertEqual(people?.count, 3)
         XCTAssertNil(requestError)
     }
+    
+    func testDateComparisonPost() {
+        let currentDate = Date()
+        let tomorrowDate = Date(timeInterval: 86400, since: currentDate)
+        let futureDate = Date(timeInterval: 300000, since: currentDate)
+        let longIsSameDay = currentDate.checkIfSameDay(with: futureDate)
+        let isSameDay = currentDate.checkIfSameDay(with: tomorrowDate)
+        XCTAssertFalse(isSameDay)
+        XCTAssertFalse(longIsSameDay)
+    }
+    
+    func testDateComparisonPre() {
+        let currentDate = Date()
+        let yesterdayDate = Date(timeInterval: -86400, since: currentDate)
+        let pastDate = Date(timeInterval: -300000, since: currentDate)
+        let longIsSameDay = currentDate.checkIfSameDay(with: pastDate)
+        let isSameDay = currentDate.checkIfSameDay(with: yesterdayDate)
+        XCTAssertFalse(isSameDay)
+        XCTAssertFalse(longIsSameDay)
+    }
 }
