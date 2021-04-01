@@ -39,7 +39,7 @@ class PeopleView: UIViewController {
         let backItem = NavigationBarItem(option: .back,
                                          selector: #selector(goBack),
                                          title: "Back",
-                                         systemIMgName: "chevron.left",
+                                         systemImgName: "chevron.left",
                                          style: .highlighted)
         self.navigationController?.setNavigationBar(with: [backItem])
     }

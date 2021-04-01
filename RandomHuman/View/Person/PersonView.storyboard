@@ -29,39 +29,53 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-lq-s91">
-                                                <rect key="frame" x="0.0" y="205.5" width="404" height="602.5"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="404" height="592.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-40-bhD" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="8" width="388" height="117.5"/>
+                                                        <rect key="frame" x="8" y="8" width="388" height="96"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtV-fv-Pkr" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="125.5" width="388" height="117"/>
+                                                        <rect key="frame" x="8" y="104" width="388" height="96"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4q7-Ui-O9o" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="242.5" width="388" height="117.5"/>
+                                                        <rect key="frame" x="8" y="200" width="388" height="96.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O92-2O-YLS" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="360" width="388" height="117"/>
+                                                        <rect key="frame" x="8" y="296.5" width="388" height="96"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edH-dW-mdx" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="477" width="388" height="117.5"/>
+                                                        <rect key="frame" x="8" y="392.5" width="388" height="96"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogm-7b-ljZ" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="488.5" width="388" height="96"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gK-nm-4Th" customClass="LabelButton" customModule="RandomHuman" customModuleProvider="target">
+                                                <rect key="frame" x="304" y="185.5" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="UNK-qP-2YE"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1gK-nm-4Th" secondAttribute="trailing" constant="10" id="8ns-bT-2ex"/>
                                             <constraint firstAttribute="trailing" secondItem="W0b-lq-s91" secondAttribute="trailing" constant="10" id="G6B-Hu-cFn"/>
-                                            <constraint firstItem="W0b-lq-s91" firstAttribute="top" secondItem="tbv-e6-Eo5" secondAttribute="bottom" constant="20" id="QGd-oV-0zV"/>
+                                            <constraint firstItem="W0b-lq-s91" firstAttribute="top" secondItem="tbv-e6-Eo5" secondAttribute="bottom" constant="30" id="QGd-oV-0zV"/>
                                             <constraint firstItem="tbv-e6-Eo5" firstAttribute="centerX" secondItem="6t5-4a-9r0" secondAttribute="centerX" id="SJZ-pR-Jix"/>
                                             <constraint firstAttribute="bottom" secondItem="W0b-lq-s91" secondAttribute="bottom" constant="10" id="YNS-f4-gBW"/>
+                                            <constraint firstItem="1gK-nm-4Th" firstAttribute="top" secondItem="tbv-e6-Eo5" secondAttribute="bottom" id="ZPz-JT-6cr"/>
                                             <constraint firstItem="tbv-e6-Eo5" firstAttribute="top" secondItem="6t5-4a-9r0" secondAttribute="top" constant="20" id="dta-6D-vIl"/>
+                                            <constraint firstItem="W0b-lq-s91" firstAttribute="top" secondItem="1gK-nm-4Th" secondAttribute="bottom" id="qBj-Oi-QMy"/>
                                             <constraint firstItem="W0b-lq-s91" firstAttribute="leading" secondItem="6t5-4a-9r0" secondAttribute="leading" id="wRk-nO-pNa"/>
                                         </constraints>
                                     </view>
@@ -89,12 +103,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mapButton" destination="1gK-nm-4Th" id="El3-vV-47z"/>
                         <outlet property="personView" destination="tbv-e6-Eo5" id="fM6-49-R3c"/>
                         <outletCollection property="characteristicsView" destination="vgF-40-bhD" collectionClass="NSMutableArray" id="hYf-RI-rpg"/>
                         <outletCollection property="characteristicsView" destination="BtV-fv-Pkr" collectionClass="NSMutableArray" id="6Nm-hn-e5I"/>
                         <outletCollection property="characteristicsView" destination="4q7-Ui-O9o" collectionClass="NSMutableArray" id="3g0-Uz-p9o"/>
                         <outletCollection property="characteristicsView" destination="O92-2O-YLS" collectionClass="NSMutableArray" id="Roc-UE-hPz"/>
                         <outletCollection property="characteristicsView" destination="edH-dW-mdx" collectionClass="NSMutableArray" id="GDG-tX-O7l"/>
+                        <outletCollection property="characteristicsView" destination="ogm-7b-ljZ" collectionClass="NSMutableArray" id="lcd-xs-voh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VbK-JK-iOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

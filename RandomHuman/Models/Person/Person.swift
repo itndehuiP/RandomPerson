@@ -76,6 +76,11 @@ struct Person: Codable {
     var contactDescription: String {
         "email: \(email ?? "No available")"
     }
+    
+    var addressFullDescription: String {
+        "Address: \(location?.address ?? "No available")"
+    }
+    
     //MARK: Media URL
     var thumbnailURL: URL? {
         guard let mediaURL = media?.thumbnail else {

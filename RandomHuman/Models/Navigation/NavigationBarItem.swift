@@ -12,6 +12,6 @@ struct NavigationBarItem {
     let option: NavigationBarItemOption
     let selector: Selector
     let title: String?
-    let systemIMgName: String?
+    let systemImgName: String?
     let style: ButtonStyle
 }

@@ -8,11 +8,13 @@
 import Foundation
 import UIKit
 
-class BarButton: UIButton {
+class LabelButton: UIButton {
     
     private var image: UIImage?
     private var titleR: String?
     private var style: ButtonStyle = .normal
+    static let plainFrame = CGRect(origin: .zero, size: CGSize(width: 30, height: 30))
+    static let compoundFrame = CGRect(origin: .zero, size: CGSize(width: 80, height: 30))
     /// Init for integration by code
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,22 +27,33 @@ class BarButton: UIButton {
     }
     
     convenience init(item: NavigationBarItem) {
-        var frame = CGRect(origin: .zero, size: CGSize(width: 30, height: 30))
-        var img: UIImage?
-        var title: String?
-        if let systemName = item.systemIMgName, let image = UIImage(systemName: systemName) {
-            img = image
-        }
-        if let titleR = item.title, !titleR.isEmpty {
-            title = titleR
-            if img != nil {
-                frame = CGRect(origin: .zero, size: CGSize(width: 80, height: 30))
-            }
-        }
+        let frame = LabelButton.calculateFrame(systemImgName: item.systemImgName, title: item.title)
         self.init(frame: frame)
-        self.image = img
+        setValues(systemImgName: item.systemImgName, title: item.title, style: item.style)
+    }
+    
+    convenience init(systemImgName: String?, title: String?, style: ButtonStyle) {
+        let frame = LabelButton.calculateFrame(systemImgName: systemImgName, title: title)
+        self.init(frame: frame)
+        setValues(systemImgName: systemImgName, title: title, style: style)
+    }
+    
+    private static func calculateFrame(systemImgName: String? , title: String?) -> CGRect {
+        if !(title ?? "").isEmpty {
+            if let imgName = systemImgName, UIImage(systemName: imgName) != nil {
+                return LabelButton.compoundFrame
+            }
+            return LabelButton.plainFrame
+        }
+        return LabelButton.plainFrame
+    }
+    
+    func setValues(systemImgName: String?, title: String?, style: ButtonStyle) {
+        if let systemImgName = systemImgName, let img = UIImage(systemName: systemImgName) {
+            self.image = img
+        }
         self.titleR = title
-        self.style = item.style
+        self.style = style
         configureView()
     }
     

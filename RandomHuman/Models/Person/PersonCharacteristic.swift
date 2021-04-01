@@ -13,4 +13,5 @@ enum PersonCharacteristic: CaseIterable {
     case age
     case contact
     case nationality
+    case address
 }

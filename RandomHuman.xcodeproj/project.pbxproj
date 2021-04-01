@@ -65,7 +65,7 @@
 		A04347F42615056700B3AB7F /* NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04347F32615056700B3AB7F /* NavigationBarItem.swift */; };
 		A04348022615086300B3AB7F /* NavigationBarItemOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348012615086300B3AB7F /* NavigationBarItemOption.swift */; };
 		A04348072615090200B3AB7F /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348062615090200B3AB7F /* ButtonStyle.swift */; };
-		A043480C2615096900B3AB7F /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043480B2615096900B3AB7F /* BarButton.swift */; };
+		A043480C2615096900B3AB7F /* LabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043480B2615096900B3AB7F /* LabelButton.swift */; };
 		A043481126150A5400B3AB7F /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043481026150A5400B3AB7F /* Extension+UIButton.swift */; };
 		A043481C261515A800B3AB7F /* RandomRowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043481B261515A800B3AB7F /* RandomRowDelegate.swift */; };
 		A0434824261518C800B3AB7F /* PeopleSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0434823261518C800B3AB7F /* PeopleSetter.swift */; };
@@ -79,6 +79,11 @@
 		A043485A2615311A00B3AB7F /* CharacteristicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348592615311A00B3AB7F /* CharacteristicModel.swift */; };
 		A04348602615327A00B3AB7F /* PersonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043485F2615327A00B3AB7F /* PersonImageView.swift */; };
 		A0434868261538F300B3AB7F /* PersonCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0434867261538F300B3AB7F /* PersonCellDelegate.swift */; };
+		A043486E2615407200B3AB7F /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A043486D2615407200B3AB7F /* MapView.storyboard */; };
+		A04348732615418800B3AB7F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348722615418800B3AB7F /* MapView.swift */; };
+		A0434879261541AB00B3AB7F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0434878261541AB00B3AB7F /* MapViewModel.swift */; };
+		A043487F261567A200B3AB7F /* MapSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043487E261567A200B3AB7F /* MapSetter.swift */; };
+		A04348872615859E00B3AB7F /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04348862615859E00B3AB7F /* MapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,7 +166,7 @@
 		A04347F32615056700B3AB7F /* NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItem.swift; sourceTree = "<group>"; };
 		A04348012615086300B3AB7F /* NavigationBarItemOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemOption.swift; sourceTree = "<group>"; };
 		A04348062615090200B3AB7F /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
-		A043480B2615096900B3AB7F /* BarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
+		A043480B2615096900B3AB7F /* LabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButton.swift; sourceTree = "<group>"; };
 		A043481026150A5400B3AB7F /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
 		A043481B261515A800B3AB7F /* RandomRowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRowDelegate.swift; sourceTree = "<group>"; };
 		A0434823261518C800B3AB7F /* PeopleSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSetter.swift; sourceTree = "<group>"; };
@@ -175,6 +180,11 @@
 		A04348592615311A00B3AB7F /* CharacteristicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicModel.swift; sourceTree = "<group>"; };
 		A043485F2615327A00B3AB7F /* PersonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImageView.swift; sourceTree = "<group>"; };
 		A0434867261538F300B3AB7F /* PersonCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCellDelegate.swift; sourceTree = "<group>"; };
+		A043486D2615407200B3AB7F /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		A04348722615418800B3AB7F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A0434878261541AB00B3AB7F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		A043487E261567A200B3AB7F /* MapSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSetter.swift; sourceTree = "<group>"; };
+		A04348862615859E00B3AB7F /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,10 +272,11 @@
 			isa = PBXGroup;
 			children = (
 				A00DC4342614787F00CA804F /* Array */,
-				A00DC42C2614764D00CA804F /* Diversity */,
 				A00DC3BC261421B700CA804F /* Date */,
+				A00DC42C2614764D00CA804F /* Diversity */,
 				A00DC3432613036000CA804F /* Location */,
 				A00DC3C2261423C500CA804F /* Media */,
+				A043487D2615675B00B3AB7F /* Map */,
 				A04347EB2615042B00B3AB7F /* Navigation */,
 				A00DC33D261302CB00CA804F /* Person */,
 				A0434823261518C800B3AB7F /* PeopleSetter.swift */,
@@ -307,6 +318,7 @@
 				A043485E2615325D00B3AB7F /* ImageV */,
 				A00DC41A261469EF00CA804F /* Labels */,
 				A00DC401261460B200CA804F /* Home */,
+				A043486C2615405D00B3AB7F /* Map */,
 				A04347D92615035500B3AB7F /* Navigation */,
 				A00DC46F261496EE00CA804F /* People */,
 				A04348312615254900B3AB7F /* Person */,
@@ -319,8 +331,9 @@
 			isa = PBXGroup;
 			children = (
 				A00DC44526147CBD00CA804F /* Home */,
-				A043484B26152D2400B3AB7F /* Person */,
+				A04348772615419800B3AB7F /* Map */,
 				A00DC49326149FB800CA804F /* People */,
+				A043484B26152D2400B3AB7F /* Person */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -402,7 +415,7 @@
 		A00DC4282614701C00CA804F /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				A043480B2615096900B3AB7F /* BarButton.swift */,
+				A043480B2615096900B3AB7F /* LabelButton.swift */,
 				A00DC45A261483A800CA804F /* CircleButton.swift */,
 				A00DC4232614700D00CA804F /* HighlightedButton.swift */,
 				A043481026150A5400B3AB7F /* Extension+UIButton.swift */,
@@ -518,6 +531,32 @@
 			path = ImageV;
 			sourceTree = "<group>";
 		};
+		A043486C2615405D00B3AB7F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A043486D2615407200B3AB7F /* MapView.storyboard */,
+				A04348722615418800B3AB7F /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A04348772615419800B3AB7F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A0434878261541AB00B3AB7F /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A043487D2615675B00B3AB7F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A043487E261567A200B3AB7F /* MapSetter.swift */,
+				A04348862615859E00B3AB7F /* MapAnnotation.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -631,6 +670,7 @@
 			files = (
 				A00DC3112612E78100CA804F /* LaunchScreen.storyboard in Resources */,
 				A00DC403261462EB00CA804F /* HomeMainCard.xib in Resources */,
+				A043486E2615407200B3AB7F /* MapView.storyboard in Resources */,
 				A00DC42E2614772700CA804F /* DiversityQuotes.plist in Resources */,
 				A00DC30E2612E78100CA804F /* Assets.xcassets in Resources */,
 				A00DC4712614970400CA804F /* PeopleView.storyboard in Resources */,
@@ -676,6 +716,7 @@
 				A00DC3E92614590F00CA804F /* PersonResponseInfo.swift in Sources */,
 				A04347F42615056700B3AB7F /* NavigationBarItem.swift in Sources */,
 				A04347E3261503DD00B3AB7F /* NavigationBarSettable.swift in Sources */,
+				A0434879261541AB00B3AB7F /* MapViewModel.swift in Sources */,
 				A043481C261515A800B3AB7F /* RandomRowDelegate.swift in Sources */,
 				A00DC39F261335C900CA804F /* PersonHandler.swift in Sources */,
 				A00DC411261466EA00CA804F /* HomeMainCard.swift in Sources */,
@@ -686,7 +727,7 @@
 				A04347E4261503DD00B3AB7F /* Navigable.swift in Sources */,
 				A04347EE2615044B00B3AB7F /* ViewControllerIdentifiable.swift in Sources */,
 				A00DC4162614673500CA804F /* NibLoadable.swift in Sources */,
-				A043480C2615096900B3AB7F /* BarButton.swift in Sources */,
+				A043480C2615096900B3AB7F /* LabelButton.swift in Sources */,
 				A00DC38926132E7B00CA804F /* APITools.swift in Sources */,
 				A00DC3092612E78100CA804F /* HomeView.swift in Sources */,
 				A04348022615086300B3AB7F /* NavigationBarItemOption.swift in Sources */,
@@ -706,10 +747,13 @@
 				A043481126150A5400B3AB7F /* Extension+UIButton.swift in Sources */,
 				A00DC49526149FC900CA804F /* PeopleViewModel.swift in Sources */,
 				A00DC3052612E78100CA804F /* AppDelegate.swift in Sources */,
+				A043487F261567A200B3AB7F /* MapSetter.swift in Sources */,
 				A00DC339261301FC00CA804F /* Person.swift in Sources */,
+				A04348732615418800B3AB7F /* MapView.swift in Sources */,
 				A00DC3522613093700CA804F /* TimeZone.swift in Sources */,
 				A00DC35F261317C500CA804F /* Gender.swift in Sources */,
 				A04348072615090200B3AB7F /* ButtonStyle.swift in Sources */,
+				A04348872615859E00B3AB7F /* MapAnnotation.swift in Sources */,
 				A00DC4092614659900CA804F /* Extension+Color.swift in Sources */,
 				A00DC41C26146A0200CA804F /* TitleLabel.swift in Sources */,
 				A04347E1261503DD00B3AB7F /* NavigateOption.swift in Sources */,

@@ -17,9 +17,7 @@ struct Location: Codable {
     let postcodeS: String?
     let coordinates: Coordinate?
     let timezone: TimeZone?
-    
-    
-    
+        
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         street = try values.decode(Street.self, forKey: .street)
@@ -39,4 +37,31 @@ struct Location: Codable {
             self.postcodeS = nil
         }
     }
+    
+    var address: String? {
+        var builder: String = ""
+        if let streetDescription = street?.streetDescription {
+            builder = streetDescription
+        }
+        appendToBuilder(&builder, addition: city?.capitalized)
+        appendToBuilder(&builder, addition: state?.capitalized)
+        appendToBuilder(&builder, addition: country?.capitalized)
+        appendToBuilder(&builder, addition: postcodeS)
+        return builder.isEmpty ? nil : builder
+    }
+    
+    //MARK: Text Builder
+    private func textValid(_ text: String?) -> Bool {
+        !(text ?? "").isEmpty
+    }
+    
+    private func appendToBuilder(_ builder: inout String, addition: String?) {
+        if textValid(addition) {
+            if !builder.isEmpty {
+                builder.append(", ")
+                builder.append(addition!)
+            }
+        }
+    }
+    
 }

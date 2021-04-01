@@ -12,6 +12,7 @@ import os.log
 class PersonView: UIViewController {
 
     @IBOutlet weak var personView: PersonImageView!
+    @IBOutlet weak var mapButton: LabelButton!
     @IBOutlet var characteristicsView: [PersonCharacteristicView]!
     var viewModel: PersonViewModel?
     private var cancellables: Set<AnyCancellable> = []
@@ -30,7 +31,7 @@ class PersonView: UIViewController {
         let backItem = NavigationBarItem(option: .back,
                                          selector: #selector(goBack),
                                          title: "Back",
-                                         systemIMgName: "chevron.left",
+                                         systemImgName: "chevron.left",
                                          style: .highlighted)
         self.navigationController?.setNavigationBar(with: [backItem])
     }
@@ -46,6 +47,26 @@ class PersonView: UIViewController {
     private func reloadView() {
         personView.setMedia(viewModel?.mediaURL)
         setCharacteristic()
+        configureMapButton()
+    }
+    
+    private func configureMapButton() {
+        if viewModel?.validCoordinates ?? false {
+            mapButton.setValues(systemImgName: "location", title: "Locate", style: .highlighted)
+            mapButton.addTarget(self, action: #selector(showMap), for: .touchUpInside)
+        } else {
+            mapButton.isHidden = true
+        }
+    }
+    
+    @objc private func showMap() {
+        let coordinates = viewModel?.person.location?.coordinates?.clCoordinates
+        let description = viewModel?.plainAddressDescription
+        guard let setter = MapSetter(coordinate: coordinates, description: description?.description) else {
+            Logger().log("PersonView: Button should not be available showMap")
+            return
+        }
+        self.navigationController?.push(option: .mapview(setter))
     }
     
     private func setCharacteristic() {
@@ -70,6 +91,10 @@ class PersonView: UIViewController {
             case .contact:
                 if characteristicsView.indexRange(4), let info = viewModel?.genderDescription {
                     characteristicsView[4].setInfo(info)
+                }
+            case .address:
+                if characteristicsView.indexRange(5), let info = viewModel?.addressDescription {
+                    characteristicsView[5].setInfo(info)
                 }
             }
         }

@@ -34,7 +34,20 @@ class PersonViewModel: ObservableObject {
         CharacteristicModel(systemImgName: "person.crop.square.fill.and.at.rectangle", valueDescripton: person.contactDescription)
     }
     
+    var addressDescription: CharacteristicModel {
+        CharacteristicModel(systemImgName: "location.fill", valueDescripton: person.addressFullDescription)
+    }
+    
+    var plainAddressDescription: String? {
+        person.location?.address
+    }
+    
     var mediaURL: URL? {
         person.bigMediaURL
     }
+    
+    var validCoordinates: Bool {
+        person.location?.coordinates?.clCoordinates != nil
+    }
+    
 }
