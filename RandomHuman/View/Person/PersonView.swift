@@ -32,7 +32,7 @@ class PersonView: UIViewController {
                                          selector: #selector(goBack),
                                          title: "Back",
                                          systemImgName: "chevron.left",
-                                         style: .highlighted)
+                                         style: .normal)
         self.navigationController?.setNavigationBar(with: [backItem])
     }
     

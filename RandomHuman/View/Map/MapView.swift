@@ -27,7 +27,7 @@ class MapView: UIViewController {
                                          selector: #selector(goBack),
                                          title: "Back",
                                          systemImgName: "chevron.left",
-                                         style: .highlighted)
+                                         style: .normal)
         self.navigationController?.setNavigationBar(with: [backItem])
     }
     
@@ -55,7 +55,7 @@ class MapView: UIViewController {
     
     private func relocateMap(to coordinate: CLLocationCoordinate2D) {
         let center = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 20, longitudeDelta: 20))
         self.mapView.setRegion(region, animated: true)
         addAnnotation(coordinate: coordinate, description: viewModel?.descriptionName)
     }

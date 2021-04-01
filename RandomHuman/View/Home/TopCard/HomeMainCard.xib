@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeMainCard" customModule="RandomHuman" customModuleProvider="target">
             <connections>
                 <outlet property="backView" destination="tvG-KW-vXk" id="DjX-7u-g2j"/>
-                <outlet property="discoveryButton" destination="B4c-7h-9j0" id="LpK-ux-YoE"/>
                 <outlet property="quoteLabel" destination="QYF-Tp-d0b" id="A1q-g3-6ag"/>
                 <outlet property="welcomeLabel" destination="vLA-op-1W0" id="d2i-WD-lqY"/>
             </connections>
@@ -28,24 +27,17 @@
                             <rect key="frame" x="10" y="10" width="394" height="842"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLA-op-1W0" customClass="TitleLabel" customModule="RandomHuman" customModuleProvider="target">
-                                    <rect key="frame" x="8" y="59" width="378" height="735"/>
+                                    <rect key="frame" x="8" y="59" width="378" height="775"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYF-Tp-d0b" customClass="DescriptiveLabel" customModule="RandomHuman" customModuleProvider="target">
-                                    <rect key="frame" x="8" y="794" width="378" height="0.0"/>
+                                    <rect key="frame" x="8" y="834" width="378" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4c-7h-9j0" customClass="HighlightedButton" customModule="RandomHuman" customModuleProvider="target">
-                                    <rect key="frame" x="8" y="794" width="378" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="YF5-oF-0sZ"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                </button>
                             </subviews>
                             <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="8" trailing="8"/>
                         </stackView>
@@ -75,9 +67,6 @@
         </view>
     </objects>
     <designables>
-        <designable name="B4c-7h-9j0">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
         <designable name="QYF-Tp-d0b">
             <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
