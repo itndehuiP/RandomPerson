@@ -7,10 +7,12 @@
 
 import UIKit
 import os.log
+import SwiftUI
 
 class HomeView: UIViewController {
     @IBOutlet private weak var panelInstructions: DescriptiveLabel!
     @IBOutlet weak var discoverTableView: UITableView!
+    private var hostVC: UIHostingController<RandomAnimatorView>? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +38,22 @@ class HomeView: UIViewController {
         self.navigationController?.setNavigationBar(with: nil)
     }
     
+    private func presentAnimator(quantity: Int) {
+        let randomViewAnimatorHostVC = UIHostingController(rootView: RandomAnimatorView(value: quantity, onContinue: showPeopleView(quantity:)))
+        randomViewAnimatorHostVC.modalPresentationStyle = .overCurrentContext
+        hostVC = randomViewAnimatorHostVC
+        self.present(hostVC!, animated: true, completion: nil)
+    }
+    
     private func showPeopleView(quantity: Int) {
-        self.navigationController?.push(option: .people(PeopleSetter(discoveryQuantity: quantity)))
+        let setter = PeopleSetter(discoveryQuantity: quantity)
+        hostVC?.dismiss(animated: true, completion: { [weak self] in
+            guard let self = self else {
+                Logger().critical("HomeView: Nil self in showPeopleView")
+                return
+            }
+            self.navigationController?.push(option: .people(setter))
+        })
     }
     
 }
@@ -65,7 +81,8 @@ extension HomeView: UITableViewDelegate {
 
 extension HomeView: RandomRowDelegate {
     func onButtonTapped(value: Int) {
-        showPeopleView(quantity: value)
+        presentAnimator(quantity: value)
+//        showPeopleView(quantity: value)
     }
     
 }

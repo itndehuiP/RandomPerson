@@ -13,12 +13,12 @@ extension UIButton {
     func setTintColor(for style: ButtonStyle) -> UIColor? {
         switch style {
         case .highlighted:
-            let color = UIColor.alert
+            let color = UIColor.highlight
             self.tintColor = UIColor.constrast
             self.backgroundColor = color
             return color
         case .normal:
-            let color = UIColor.highlight
+            let color = UIColor.alert
             self.tintColor = UIColor.constrast
             self.backgroundColor = color
             return color

@@ -11,6 +11,7 @@ import Combine
 
 class PeopleView: UIViewController {
     
+    @IBOutlet weak var loaderView: LoaderView!
     @IBOutlet weak var peopleTableView: UITableView!
     var viewModel: PeopleViewModel?
     private var cancellables: Set<AnyCancellable> = []
@@ -40,7 +41,7 @@ class PeopleView: UIViewController {
                                          selector: #selector(goBack),
                                          title: "Back",
                                          systemImgName: "chevron.left",
-                                         style: .highlighted)
+                                         style: .normal)
         self.navigationController?.setNavigationBar(with: [backItem])
     }
     
@@ -58,15 +59,24 @@ class PeopleView: UIViewController {
     
     private func registerFetchPeople() {
         viewModel?.$people
-            .sink {[weak self] peope in
+            .sink {[weak self] people in
                 guard let self = self else {
                     Logger().critical("PeopleView: Nil self in fetchPeople")
                     return
                 }
-                self.lastCount = peope?.count
-                self.peopleTableView.reloadData()
+                self.lastCount = people?.count
+                self.reloadView()
             }
             .store(in: &cancellables)
+    }
+    
+    private func reloadView() {
+        if lastCount == nil || lastCount == 0 {
+            loaderView.isHidden = false
+        } else {
+            loaderView.isHidden = true
+        }
+        self.peopleTableView.reloadData()
     }
     
 }

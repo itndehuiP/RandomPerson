@@ -13,7 +13,6 @@ class HomeMainCard: UIView, NibLoadable {
     @IBOutlet private weak var backView: UIView!
     @IBOutlet private weak var welcomeLabel: TitleLabel!
     @IBOutlet private weak var quoteLabel: DescriptiveLabel!
-    @IBOutlet private weak var discoveryButton: HighlightedButton!
     
     private let quoteGenerator = DiversityQuoteGenerator()
     
@@ -34,7 +33,8 @@ class HomeMainCard: UIView, NibLoadable {
         backView.layer.cornerRadius = 10.0
         backView.backgroundColor = UIColor.secondHighlight
         welcomeLabel.text = "Welcome"
-        discoveryButton.setTitle("Saved discoveries", for: .normal)
         quoteLabel.text = quoteGenerator.quote
+        quoteLabel.adjustsFontSizeToFitWidth = true
+        quoteLabel.minimumScaleFactor = 0.8
     }
 }
