@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mPA-Cb-XpP" customClass="RandomRowCell" customModule="RandomHuman" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mPA-Cb-XpP" id="kEa-cr-w9o">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="miv-1p-5a3">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="34"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UuO-ji-fYl">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFd-XY-IhC" customClass="CircleButton" customModule="RandomHuman" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hBp-4i-UCA">
+                                <rect key="frame" x="56" y="0.0" width="46" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ha-Bp-4Tn" customClass="CircleButton" customModule="RandomHuman" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="25p-yu-dgh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-UF-Pu8">
+                                <rect key="frame" x="112" y="0.0" width="46" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lel-8n-jmZ" customClass="CircleButton" customModule="RandomHuman" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="miv-1p-5a3" firstAttribute="leading" secondItem="kEa-cr-w9o" secondAttribute="leading" id="ChC-xC-Oqa"/>
+                    <constraint firstAttribute="trailing" secondItem="miv-1p-5a3" secondAttribute="trailing" id="Lfv-r1-Alr"/>
+                    <constraint firstAttribute="bottom" secondItem="miv-1p-5a3" secondAttribute="bottom" constant="10" id="aBf-Qx-JlL"/>
+                    <constraint firstItem="miv-1p-5a3" firstAttribute="top" secondItem="kEa-cr-w9o" secondAttribute="top" id="xdz-52-5XV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstButton" destination="VFd-XY-IhC" id="2PF-2H-E7g"/>
+                <outlet property="secondButton" destination="0Ha-Bp-4Tn" id="Icq-b2-kjN"/>
+                <outlet property="thirdButton" destination="Lel-8n-jmZ" id="Aba-OK-MOW"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="34"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="0Ha-Bp-4Tn">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="Lel-8n-jmZ">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="VFd-XY-IhC">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+</document>

@@ -14,20 +14,66 @@ class RandomHumanTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    //MARK: API
+    func testRandomUserAPIConnection() {
+        let interactor = APIInteractor()
+        let expectation = XCTestExpectation(description: "getRadomUser api")
+        var person: Person?
+        var requestError: RandomAPIError?
+        interactor.getRandomPerson(onCompletion: { result in
+            switch result {
+            case .success(let personReceived):
+                person = personReceived
+            case .failure(let error):
+                requestError = error
+            }
+            expectation.fulfill()
+        })
+        wait(for: [expectation], timeout: 10)
+        XCTAssertNotNil(person)
+        XCTAssertNil(requestError)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testThreeRandomUserAPIConnection() {
+        let expectation = XCTestExpectation(description: "getThreeRandomUser api")
+        
+        let interactor = APIInteractor()
+        var people: People?
+        var requestError: RandomAPIError?
+        interactor.getThreeRandomPerson { result in
+            switch result {
+            case .success(let peopleReceived):
+                people = peopleReceived
+            case .failure(let error):
+                requestError = error
+            }
+            expectation.fulfill()
         }
-    }
 
+        wait(for: [expectation], timeout: 10)
+        XCTAssertNotNil(people)
+        XCTAssertEqual(people?.count, 3)
+        XCTAssertNil(requestError)
+    }
+    
+    func testDateComparisonPost() {
+        let currentDate = Date()
+        let tomorrowDate = Date(timeInterval: 86400, since: currentDate)
+        let futureDate = Date(timeInterval: 300000, since: currentDate)
+        let longIsSameDay = currentDate.checkIfSameDay(with: futureDate)
+        let isSameDay = currentDate.checkIfSameDay(with: tomorrowDate)
+        XCTAssertFalse(isSameDay)
+        XCTAssertFalse(longIsSameDay)
+    }
+    
+    func testDateComparisonPre() {
+        let currentDate = Date()
+        let yesterdayDate = Date(timeInterval: -86400, since: currentDate)
+        let pastDate = Date(timeInterval: -300000, since: currentDate)
+        let longIsSameDay = currentDate.checkIfSameDay(with: pastDate)
+        let isSameDay = currentDate.checkIfSameDay(with: yesterdayDate)
+        XCTAssertFalse(isSameDay)
+        XCTAssertFalse(longIsSameDay)
+    }
 }

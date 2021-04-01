@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="boM-K3-Aca">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--People View-->
+        <scene sceneID="bwl-e9-BgW">
+            <objects>
+                <viewController storyboardIdentifier="PeopleView" id="boM-K3-Aca" customClass="PeopleView" customModule="RandomHuman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fuJ-g6-7oV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n4z-Of-si3">
+                                <rect key="frame" x="0.0" y="54" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4U-kr-TXJ" userLabel="Loader" customClass="LoaderView" customModule="RandomHuman" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oke-wv-h6B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n4z-Of-si3" firstAttribute="top" secondItem="oke-wv-h6B" secondAttribute="top" constant="10" id="1t1-ZG-Zd3"/>
+                            <constraint firstItem="X4U-kr-TXJ" firstAttribute="top" secondItem="oke-wv-h6B" secondAttribute="top" id="BgS-0z-pWM"/>
+                            <constraint firstItem="X4U-kr-TXJ" firstAttribute="leading" secondItem="oke-wv-h6B" secondAttribute="leading" id="PSv-2b-Fc5"/>
+                            <constraint firstItem="oke-wv-h6B" firstAttribute="bottom" secondItem="n4z-Of-si3" secondAttribute="bottom" id="Ppa-Xd-gRx"/>
+                            <constraint firstItem="n4z-Of-si3" firstAttribute="leading" secondItem="oke-wv-h6B" secondAttribute="leading" id="Qy2-Pd-tgg"/>
+                            <constraint firstItem="oke-wv-h6B" firstAttribute="trailing" secondItem="n4z-Of-si3" secondAttribute="trailing" id="f1h-sa-BjD"/>
+                            <constraint firstItem="oke-wv-h6B" firstAttribute="trailing" secondItem="X4U-kr-TXJ" secondAttribute="trailing" id="quI-n1-0TD"/>
+                            <constraint firstItem="oke-wv-h6B" firstAttribute="bottom" secondItem="X4U-kr-TXJ" secondAttribute="bottom" id="sHM-z5-biT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loaderView" destination="X4U-kr-TXJ" id="IaK-R3-Esg"/>
+                        <outlet property="peopleTableView" destination="n4z-Of-si3" id="m0g-kv-6tK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3h-7v-F9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-362" y="-249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

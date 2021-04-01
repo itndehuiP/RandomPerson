@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rgf-lV-rPk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person View-->
+        <scene sceneID="2xg-uZ-7OL">
+            <objects>
+                <viewController id="Rgf-lV-rPk" customClass="PersonView" customModule="RandomHuman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCa-sk-wDN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldm-OG-qVu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6t5-4a-9r0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-e6-Eo5" customClass="PersonImageView" customModule="RandomHuman" customModuleProvider="target">
+                                                <rect key="frame" x="124" y="20" width="166" height="165.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="tbv-e6-Eo5" secondAttribute="height" multiplier="1:1" id="tMY-aC-nHE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-lq-s91">
+                                                <rect key="frame" x="0.0" y="215.5" width="404" height="592.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-40-bhD" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="388" height="96"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtV-fv-Pkr" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="104" width="388" height="96"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4q7-Ui-O9o" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="200" width="388" height="96.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O92-2O-YLS" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="296.5" width="388" height="96"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edH-dW-mdx" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="392.5" width="388" height="96"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogm-7b-ljZ" customClass="PersonCharacteristicView" customModule="RandomHuman" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="488.5" width="388" height="96"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gK-nm-4Th" customClass="LabelButton" customModule="RandomHuman" customModuleProvider="target">
+                                                <rect key="frame" x="304" y="185.5" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="UNK-qP-2YE"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1gK-nm-4Th" secondAttribute="trailing" constant="10" id="8ns-bT-2ex"/>
+                                            <constraint firstAttribute="trailing" secondItem="W0b-lq-s91" secondAttribute="trailing" constant="10" id="G6B-Hu-cFn"/>
+                                            <constraint firstItem="W0b-lq-s91" firstAttribute="top" secondItem="tbv-e6-Eo5" secondAttribute="bottom" constant="30" id="QGd-oV-0zV"/>
+                                            <constraint firstItem="tbv-e6-Eo5" firstAttribute="centerX" secondItem="6t5-4a-9r0" secondAttribute="centerX" id="SJZ-pR-Jix"/>
+                                            <constraint firstAttribute="bottom" secondItem="W0b-lq-s91" secondAttribute="bottom" constant="10" id="YNS-f4-gBW"/>
+                                            <constraint firstItem="1gK-nm-4Th" firstAttribute="top" secondItem="tbv-e6-Eo5" secondAttribute="bottom" id="ZPz-JT-6cr"/>
+                                            <constraint firstItem="tbv-e6-Eo5" firstAttribute="top" secondItem="6t5-4a-9r0" secondAttribute="top" constant="20" id="dta-6D-vIl"/>
+                                            <constraint firstItem="W0b-lq-s91" firstAttribute="top" secondItem="1gK-nm-4Th" secondAttribute="bottom" id="qBj-Oi-QMy"/>
+                                            <constraint firstItem="W0b-lq-s91" firstAttribute="leading" secondItem="6t5-4a-9r0" secondAttribute="leading" id="wRk-nO-pNa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6t5-4a-9r0" firstAttribute="trailing" secondItem="R7a-qc-q9D" secondAttribute="trailing" id="TkA-Z2-LQo"/>
+                                    <constraint firstItem="6t5-4a-9r0" firstAttribute="bottom" secondItem="R7a-qc-q9D" secondAttribute="bottom" id="aLo-GW-pCH"/>
+                                    <constraint firstItem="6t5-4a-9r0" firstAttribute="top" secondItem="R7a-qc-q9D" secondAttribute="top" id="rGP-s8-HTP"/>
+                                    <constraint firstItem="6t5-4a-9r0" firstAttribute="leading" secondItem="R7a-qc-q9D" secondAttribute="leading" id="zMe-jU-yd5"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="R7a-qc-q9D"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="7QO-J5-YXu"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PiW-B4-wfo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tbv-e6-Eo5" firstAttribute="width" secondItem="PCa-sk-wDN" secondAttribute="width" multiplier="0.4" id="3na-UK-zKz"/>
+                            <constraint firstItem="PiW-B4-wfo" firstAttribute="bottom" secondItem="ldm-OG-qVu" secondAttribute="bottom" id="47y-Yo-A3X"/>
+                            <constraint firstItem="6t5-4a-9r0" firstAttribute="centerY" secondItem="PiW-B4-wfo" secondAttribute="centerY" id="JHW-QN-oNq"/>
+                            <constraint firstItem="6t5-4a-9r0" firstAttribute="centerX" secondItem="PiW-B4-wfo" secondAttribute="centerX" id="NM1-pZ-HRo"/>
+                            <constraint firstItem="PiW-B4-wfo" firstAttribute="trailing" secondItem="ldm-OG-qVu" secondAttribute="trailing" id="Om2-tS-4rg"/>
+                            <constraint firstItem="ldm-OG-qVu" firstAttribute="top" secondItem="PiW-B4-wfo" secondAttribute="top" id="WfP-cz-zL3"/>
+                            <constraint firstItem="ldm-OG-qVu" firstAttribute="leading" secondItem="PiW-B4-wfo" secondAttribute="leading" id="eHN-e4-1eW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapButton" destination="1gK-nm-4Th" id="El3-vV-47z"/>
+                        <outlet property="personView" destination="tbv-e6-Eo5" id="fM6-49-R3c"/>
+                        <outletCollection property="characteristicsView" destination="vgF-40-bhD" collectionClass="NSMutableArray" id="hYf-RI-rpg"/>
+                        <outletCollection property="characteristicsView" destination="BtV-fv-Pkr" collectionClass="NSMutableArray" id="6Nm-hn-e5I"/>
+                        <outletCollection property="characteristicsView" destination="4q7-Ui-O9o" collectionClass="NSMutableArray" id="3g0-Uz-p9o"/>
+                        <outletCollection property="characteristicsView" destination="O92-2O-YLS" collectionClass="NSMutableArray" id="Roc-UE-hPz"/>
+                        <outletCollection property="characteristicsView" destination="edH-dW-mdx" collectionClass="NSMutableArray" id="GDG-tX-O7l"/>
+                        <outletCollection property="characteristicsView" destination="ogm-7b-ljZ" collectionClass="NSMutableArray" id="lcd-xs-voh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbK-JK-iOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.6956521739130448" y="-34.151785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
